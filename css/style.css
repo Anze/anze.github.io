@@ -1,0 +1,509 @@
+
+/*---------------------------------------------*/
+/*               variables                     */
+/*---------------------------------------------*/
+
+:root {
+    --header-color: 88, 88, 88;
+
+    --big-panel-background-color: #333;
+    --big-title-color: #fff;
+    --big-description-color: rgba(255, 255, 255, 0.5);
+    --big-footer-background-color: #000;
+    --big-availability-color: rgba(255, 255, 255, 0.75);
+
+    --little-panel-background-color: #e8e8e8;
+    --little-title-color: #333;
+    --little-description-color: rgba(0, 0, 0, 0.5);
+    --little-footer-background-color: #ddd;
+    --little-availability-color: rgba(0, 0, 0, 0.75);
+
+    --panel-radius: 12px;
+    --panel-margin: 18px;
+
+    --icon-dimension: 80px;
+    --icon-stroke: -2px;
+}
+
+/*---------------------------------------------*/
+/*                  intro                      */
+/*---------------------------------------------*/
+
+section#intro {
+    padding-top: calc(64px + 40px);
+    padding-bottom: 40px;
+    max-width: 100%;
+}
+
+section#intro h2 {
+    text-align: center;
+    color: rgb(var(--header-color));
+}
+
+/*---------------------------------------------*/
+/*                  app-intro                  */
+/*---------------------------------------------*/
+
+section#app-intro {
+    padding-top: calc(64px + 40px);
+    padding-bottom: 40px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+section#app-intro div.overlay {
+    max-width: initial;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #171d29;
+}
+
+section#app-intro div.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+section#app-intro div.container div.icon {
+    width: 200px;
+    z-index: 200;
+}
+
+section#app-intro div.container div.title {
+    z-index: 200;
+}
+
+section#app-intro h1 {
+    font-weight: 600;
+    font-size: 2em;
+    text-align: left;
+}
+
+section#app-intro h2 {
+    font-family: myriad-pro, sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: left;
+    margin: 8px 0 20px 0;
+    color: #00a1ff;
+}
+
+section#app-intro img {
+    width: 100%;
+    height: 100%;
+}
+
+section#app-intro div.container div.title div.download {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+}
+
+section#app-intro div.download {
+    width: 100%;
+}
+
+/*---------------------------------------------*/
+/*                  panels                     */
+/*---------------------------------------------*/
+
+#apps section p {
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+#apps section.panels {
+    padding: 0;
+}
+
+#apps section.panels h2 {
+    text-align: center;
+    color: rgb(var(--header-color));
+}
+
+#apps section.panels h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: rgba(var(--header-color), 0.75);
+}
+
+#apps section.panels div.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#apps section.panels div.panel {
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.0em;
+
+    box-sizing: border-box;
+
+    width: 390px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#apps section.panels div.panel a {
+    display: block;
+}
+
+#apps section.panels div.panel div.body {
+    padding: 10px 0;
+}
+
+#apps section.panels div.panel div.body p {
+    padding: 5px var(--panel-margin) 0px var(--panel-margin);
+}
+
+#apps section.panels div.panel div.body p.title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+#apps section.panels div.panel div.body p.description {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+#apps section.panels div.panel div.footer p.availability {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    margin: 0;
+    border-radius: 0 0 var(--panel-radius) var(--panel-radius);
+/*
+    text-align: right;
+ */
+
+    background: url('/images/link_arrow.png') right var(--panel-margin) bottom 6px no-repeat;
+    background-size: 22px 22px;
+    background-blend-mode: difference;
+}
+
+/*---------------------------------------------*/
+/*                 big_apps                    */
+/*---------------------------------------------*/
+
+#apps section#big_apps {
+    padding-top: calc(64px + 0px);
+}
+
+#apps section#big_apps div.group {
+    margin: 40px auto;
+}
+
+#apps section#big_apps div.panel div.header {
+    position: relative;
+    line-height: 0;
+}
+
+#apps section#big_apps div.panel div.header img.banner {
+    width: 100%;
+     height: auto;
+
+    height: 88px;
+    object-fit: cover;
+
+    border-radius: var(--panel-radius) var(--panel-radius) 0 0;
+}
+
+#apps section#big_apps div.panel div.header div.icon_container {
+    width: calc(var(--icon-dimension) + (var(--icon-stroke) * 2));
+    height: calc(var(--icon-dimension) + (var(--icon-stroke) * 2));
+
+    position: absolute;
+    bottom: calc(((var(--icon-dimension) / 3) * -1.5));
+    right: calc(var(--panel-margin) + var(--icon-stroke));
+
+    background-color: var(--big-panel-background-color);
+    border-radius: 20px;
+}
+
+#apps section#big_apps div.panel div.header div.icon_container img.icon {
+    width: var(--icon-dimension);
+    height: var(--icon-dimension);
+
+    margin: var(--icon-stroke);
+}
+
+#apps section#big_apps div.panel div.body {
+    background-color: var(--big-panel-background-color);
+}
+
+#apps section#big_apps div.panel div.body p {
+    color: var(--big-title-color);
+}
+
+#apps section#big_apps div.panel div.body p.description {
+    color: var(--big-description-color);
+}
+
+#apps section#big_apps div.panel div.footer p.availability {
+    color: var(--big-availability-color);
+    background-color: var(--big-footer-background-color);
+}
+
+/*---------------------------------------------*/
+/*          media max-width: 900               */
+/*---------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+
+}
+
+/*---------------------------------------------*/
+/*          media max-width: 800               */
+/*---------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    section#big_apps {
+        padding-top: calc(112px + 0px);
+    }
+
+    section.panels div.container {
+        margin: 20px 10px;
+    }
+}
+
+/*---------------------------------------------*/
+/*          media max-width: 640               */
+/*---------------------------------------------*/
+
+@media screen and (max-width: 640px) {
+
+    section#big_apps {
+        padding-top: calc(112px + 0px);
+    }
+
+
+    section.panels div.panel {
+        width: 100%;
+    }
+
+}
+
+/*---------------------------------------------*/
+/*            dark mode support                */
+/*---------------------------------------------*/
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --header-color: 143, 155, 172;
+
+        --big-panel-background-color: #333;
+        --big-title-color: #fff;
+        --big-description-color: rgba(255, 255, 255, 0.5);
+        --big-footer-background-color: #272727;
+        --big-availability-color: rgba(255, 255, 255, 0.75);
+
+        --little-panel-background-color: #333;
+        --little-title-color: #fff;
+        --little-description-color: rgba(255, 255, 255, 0.5);
+        --little-footer-background-color: #272727;
+        --little-availability-color: rgba(255, 255, 255, 0.75);
+    }
+
+    html {
+        background: #111 url('/images/bg_dark.png') left top repeat;
+    }
+
+    a {
+        color: #ca0000;
+    }
+
+    footer > * {
+        color: #fff;
+    }
+
+    footer p {
+        color: #fff;
+    }
+
+    footer p#copyright {
+        filter: invert();
+    }
+
+    footer ul.social li {
+        filter: invert();
+        opacity: 0.5;
+    }
+
+}
+
+header {
+    z-index: 200;
+}
+
+.download a.macos {
+    margin-left: 2px;
+    display: block;
+    width: 194px;
+    height: 34px;
+    padding: 6px 0px 0px 0px;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+.download span {
+    width: 194px;
+    height: 20px;
+    color: #556991;
+    font-size: 0.7em;
+}
+
+.gocalendar .download a.macos {
+    background-color: #00a1ff;
+}
+
+.gocalendar section#app-intro h2 {
+    color: #00a1ff;
+}
+
+.keyclu .download a.macos {
+    background-color: #5d0296;
+}
+
+.keyclu section#app-intro h2 {
+    color: #dd5cfa;
+}
+
+.notchpet .download a.macos {
+    background-color: #00a1ff;
+}
+
+.notchpet section#app-intro h2 {
+    color: #00a1ff;
+}
+
+.copyable {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+pre {
+    margin: 0 0 1em 0;
+    padding: 8px 10px;
+    overflow-x: auto;
+    width: 300px;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+}
+
+.highlight pre {
+    border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    margin: 0;
+}
+
+pre code {
+    font-family: "Monaco", "Menlo", monospace;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.highlight code::before {
+    color: #008080;
+}
+
+.highlight code::before {
+    display: inline;
+    content: "$ ";
+}
+
+.nb {
+    color: #999999;
+}
+
+.nt {
+    color: #008080;
+}
+
+.keyclu h2 strong {
+    font-style: normal;
+    color: #dd5cfa;
+}
+
+.keyclu h2 strong em {
+    font-style: normal;
+    color: #dd5cfa;
+    border: 1px solid #dd5cfa;
+    border-radius: 8px;
+    padding: 1px 3px 1px 4px;
+}
+
+.limitations {
+    max-width: 1100px;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 10px;
+}
+
+.limitations p, .limitations ul {
+    margin: 0px;
+    padding: 4px 0px 10px 0px;
+    font-size: 0.8em;
+    font-weight: 100;
+    text-align: left;
+    color: #dbf;
+}
+.limitations ul li {
+    font-size: 1.3em !important;
+    color: #dbf !important;
+}
+
+.license h2 {
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 100;
+    line-height: 1.5;
+    margin: 00px auto 20px auto;
+    padding: 0px;
+    width: 100%;
+    color: #dd5cfa;
+}
+
+.spoiler-title {
+    padding: 6px;
+    width: 154px;
+    height: 34px;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 8px;
+    border-width: 0px;
+    background-color: #5d0296;
+}
+
+.notchpet h2 em {
+    font-style: normal;
+    color: #1885C4;
+}
+
+a.white {
+    color: white;
+}

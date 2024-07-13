@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>KeyClu</title>
+        <item>
+            <title>0.27</title>
+            <pubDate>Thu, 11 Jul 2024 03:44:13 +0200</pubDate>
+            <sparkle:version>22721</sparkle:version>
+            <sparkle:shortVersionString>0.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>fixed memory leak issue</li>
+                    <li>fixed issue #74</li>
+                    <li>added possibility to change Bookmark title and icon #70</li>
+                    <li>update sparkle (security fix)</li>
+                    <li><a href="https://github.com/Anze/KeyCluConverter">KeyClu Converter</a>, allows to convert existing `.kcustom` files to `.keyclu`</li>
+                </ul>
+            ]]>
+            </description>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.27/KeyClu_v0.27.dmg" length="5339462" type="application/octet-stream" sparkle:edSignature="AUUoHSJYRGhvuf8nryr1lqCR37VB852CyQDTpWrC07HU9EaQSaINyxO8EaBpPs9rQVB90jCQza7vR4A13XmtDg=="/>
+        </item>
+    </channel>
+</rss>

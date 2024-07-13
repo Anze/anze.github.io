@@ -1,0 +1,598 @@
+/* standard header, section, and footer elements */
+/* do not modify this file: override in style.css instead */
+
+html {
+    background: #eee url('/images/bg.png') left top repeat;
+}
+
+body {
+    font-family: myriad-pro, helvetica, arial, sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, p, li {
+    font-weight: 300;
+}
+
+a {
+    color: #004e7c;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/*---------------------------------------------*/
+/*                  header                     */
+/*---------------------------------------------*/
+
+header {
+    width: 800px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    background: url('/images/header.png') center top no-repeat;
+    background-size: 800px 144px;
+}
+
+header div#logo {
+    margin: 0px 0px 0px 12px;
+    float: left;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header div#logo span, header div#logo a {
+    color: #fff;
+    font-weight: 500;
+}
+
+header div#logo a img {
+    width: 196px;
+    height: 45px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: auto;
+    height: 64px;
+    float: right;
+    list-style-type: none;
+}
+
+header nav ul li {
+    font-size: 0.9em;
+     height: 64px;
+     line-height: 64px;
+     text-align: center;
+}
+
+header nav ul li#nav_contact.selected {
+    border-radius: 0 0 8px 0;
+}
+
+header nav ul li a {
+    display: block;
+     padding: 0 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a,
+header nav ul li a:visited,
+header nav ul li a:active,
+header nav ul li a:hover {
+    color: #fff;
+    font-weight: 500;
+}
+
+header nav ul li.selected {
+    background-color: #3f0092;
+}
+
+
+/*---------------------------------------------*/
+/*                 section                     */
+/*---------------------------------------------*/
+
+section > * {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    font-weight: 200;
+
+    margin: 0;
+    max-width: 100%;
+}
+
+section h3 {
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+section h4 {
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+section ul {
+    margin: 10px 20px 10px 20px;
+}
+
+section li {
+    margin-left: 20px;
+}
+
+section strong {
+    font-weight: 400;
+}
+
+
+/*---------------------------------------------*/
+/*                  footer                     */
+/*---------------------------------------------*/
+
+footer {
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+}
+
+footer > * {
+    text-align: center;
+    margin: 0;
+    color: #000;
+}
+
+footer p {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    color: #000;
+}
+
+footer p#copyright {
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*---------------------------------------------*/
+/*          media max-width: 800               */
+/*---------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    header {
+        width: 100%;
+        left: 0;
+        margin-left: 0px;
+    }
+
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0px;
+        border-radius: 0;
+        margin-top: 0px;
+    }
+
+    section h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 35px;
+        max-width: 100%;
+    }
+
+    #apps section.panels:first-child {
+        padding-top: 80px !important;
+    }
+
+    .container {
+        margin-top: 35px;
+    }
+
+}
+
+/*---------------------------------------------*/
+/*          media max-width: 640               */
+/*---------------------------------------------*/
+
+@media screen and (max-width: 640px) {
+
+    header {
+        width: 100%;
+        height: 112px;
+        left: 0;
+        margin-left: 0px;
+    }
+
+    header div#logo {
+        float: none;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin: 7px 0;
+    }
+
+    header div#logo a img {
+        width: 216px;
+        height: auto;
+    }
+
+
+    header nav ul {
+        height: 48px;
+
+        float: none;
+        margin: 0 auto;
+    }
+
+    header nav ul li {
+         height: 48px;
+         line-height: 48px;
+         overflow: hidden;
+    }
+
+    header nav ul li#nav_contact.selected {
+        border-radius: 0;
+    }
+
+}
+
+/*---------------------------------------------*/
+/*                 features                    */
+/*---------------------------------------------*/
+
+section#features {
+    padding: 10px 20px;
+
+    background-image: linear-gradient(#875EBE, #875EBE);
+    color: white;
+}
+
+section#features p, li, strong, em {
+    color: white;
+}
+
+section#features p {
+    margin: 40px auto;
+}
+
+section#features span.highlight {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(55, 168, 226, 1.0);
+    margin: 0 2px;
+    padding: 2px 6px;
+
+    border-radius: 999px;
+}
+
+section#features ul {
+    max-width: 700px;
+    margin: 20px auto;
+    list-style: none;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: top;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#features ul li {
+    width: calc(50% - 110px);
+    margin: 0;
+    padding: 0 0 0 64px;
+
+    position: relative;
+}
+
+section#features ul li::before {
+    content: "";
+    background-size: 48px 48px;
+     background-position: left top;
+     background-repeat: no-repeat;
+     background-color: #875EBE;
+    border-radius: 12px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 48px;
+    height: 48px;
+     mask-size: 48px 48px;
+}
+
+section#features ul li h3 {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+section#features ul li p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    text-align: left;
+    color: #eee;
+    padding-top: 4px;
+}
+
+/*---------------------------------------------*/
+/*                   history                   */
+/*---------------------------------------------*/
+
+section#history {
+    text-align: center;
+    background-color: #000;
+}
+
+section#history div.header {
+    max-width: initial;
+    padding: 20px;
+}
+
+section#history div.header p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+section#history div.header div.download {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 10px;
+}
+
+section#history div.download {
+    width: 100%;
+
+}
+
+section#history div.content {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    margin: auto;
+}
+
+section#history div.release {
+    margin: 40px auto 40px auto !important;
+    max-width: 700px;
+    text-align: left;
+}
+
+section#history div.summary {
+    margin: 40px auto 40px auto !important;
+    max-width: 800px;
+}
+
+section#history div.summary p {
+    text-align: left;
+    padding: 0;
+    margin: 10px 0;
+    color: #a2c1cf;
+}
+
+section#history p {
+    font-size: 1.1em;
+}
+
+section#history p.date {
+    font-size: 0.75em;
+    color: #999;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+section#history p.summary {
+    margin-top: 10px;
+}
+
+section#history h3 {
+    margin: 20px 0 0 0;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #fff;
+}
+
+section#history h4 {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    font-weight: 400;
+    color: #ccc;
+}
+
+section#history ul {
+    padding: 0;
+    margin: 10px 0 10px 20px;
+}
+
+section#history ul.secondary {
+    margin: 5px 0px 5px 20px;
+    padding: 0;
+}
+
+section#history li {
+    margin-left: 20px;
+    color: #aaa;
+}
+
+section#history div.content div:last-child {
+    margin: 20px;
+     padding-bottom: 20px;
+}
+
+section#history code {
+    font-size: 0.8em;
+    font-family: ui-monospace, monospace;
+    color: #ccc;
+}
+
+
+div#description {
+    width: 100%;
+    min-height: 176px;
+    background-image: radial-gradient(100% 100% at center 70%, rgba(0,0,0,0.0), rgba(0,0,0,0.4) 90%)
+}
+
+div#description h2 {
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0px;
+    padding: 44px 20px 45px 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+}
+
+section#features.gocalendar {
+    font-size: 100% !important;
+    background-image: linear-gradient(#171d29, #3A7597);
+}
+
+section#features.gocalendar ul li::before {
+    background-color: #1885C4;
+}
+
+section#features ul li:nth-child(1)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(2)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(3)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(4)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(5)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(6)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(7)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(8)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(9)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features ul li:nth-child(10)::before {
+    background-image: url('/images/verified-check.svg');
+}
+
+section#features.keyclu {
+    font-size: 100% !important;
+    background-image: linear-gradient(#171d29, #5d0296);
+}
+
+section#features.notchpet {
+    font-size: 100% !important;
+    background-image: linear-gradient(#171d29, #3A7597);
+}
+
+section#features.notchpet ul li::before {
+    background-color: #1885C4;
+}
+
+.gocalendar section#history div.header {
+    background-image: linear-gradient(#3A7597, #1885C4);
+    color: white;
+}
+
+.keyclu section#history div.header {
+    background-image: linear-gradient(#5d0296, #000);
+    color: white;
+}
+
+
+#list.white {
+    background-color: #fff;
+}
+
+div#list {
+    margin: 0 auto;
+    border-radius: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+div#list div.screenshots {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    clear: both;
+    overflow: auto;
+
+    margin-bottom: 80px;
+}
+
+div#list img.odd {
+    float: right;
+    margin-left: 20px;
+}
+
+div#list img.even {
+    float: left;
+    margin-right: 20px;
+}
+
+div#list p {
+    margin-bottom: 20px;
+    color: #666;
+    padding: 0;
+}
+div#list div.screenshots:last-child {
+    margin-bottom: 60px;
+}

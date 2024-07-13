@@ -1,0 +1,21 @@
+Application
+Notch Pet (the Application) is an application for entertain purpose. All rights to the Application belongs to its developer, Sergii Tatarenkov, sms@tatarenkov.name (the Developer).
+
+Credits
+Cat sprites from Elthen's Pixel Art Shop.
+Cat image in dock icon from Raw Pixel.
+
+License Terms
+You can use the Application for any private or business purposes according to a license agreement provided by an application store, where the Application was purchased.
+
+User Data
+The Application does not store or process user data. The Application does not send user data to anyone else.
+
+Privacy
+The Application does not collect any personal information and does not transfer any personal information to any 3rd party.
+
+Warranty
+The Developer does not provide any warranty and is not responsible for any losses or damages, which can be related to the Application’s usage. You take a whole responsibility yourself by using the Application.
+
+Contact Us
+If you have any questions or suggestions, do not hesitate to contact me sms@tatarenkov.name

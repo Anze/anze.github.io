@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Language" content="en-us">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Anze&#039;s Laboratory &raquo; KeyClu Changelog</title>
+
+        <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="/css/shared.css?4" media="screen" rel="stylesheet" type="text/css">
+        <link href="/css/style.css?5" media="screen" rel="stylesheet" type="text/css">
+        <link href="/css/pap8gno.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="/css/prettyPhoto.css?1" rel="stylesheet" type="text/css">
+
+        <link rel="icon" type="image/png" sizes="256x256" href="/images/favicons/256/keyclu.png"/>
+        <link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/128/keyclu.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/32/keyclu.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/16/keyclu.png"/>
+
+        <meta name="keywords" content="KeyClu, key, hotkey, shortcut, shortcuts">
+        <meta name="description" content="Learn and use all shortcuts easily with KeyClu">
+        <meta property="og:title" content="KeyClu Changelog"/>
+        <meta property="og:image" content="https://sergii.tatarenkov.name/images/keyclu/keyclu.png"/>
+        <meta property="og:description" content="Learn and use all shortcuts easily with KeyClu"/>
+        <meta property="og:image:width" content="256" />
+        <meta property="og:image:height" content="256" />
+    </head>
+    <body>
+        <header role="banner">
+            <div id="logo">
+                <a href="/">Anze&#039;s Laboratory</a>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li id="nav_me"><a href="/">Me</a></li>
+                    <li id="nav_apps"><a href="/apps/">Apps</a></li>
+                    <li id="nav_out"><span>&nbsp;</span></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main" class="keyclu">
+            <section id="app-intro">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="icon">
+                        <a href="/keyclu/support/"><img src="/images/keyclu/keyclu.png"></a>
+                    </div>
+                    <div class="title">
+                        <h1>KeyClu</h1>
+                        <h2>overview of all shortcuts</h2>
+                        <div class="download">
+                            <a href="https://github.com/Anze/KeyCluCask/releases/latest" class="macos">
+                                Download on GitHub
+                            </a>
+                            <span> + Intel macOS 11 or later</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="description">
+                <h2>Simple and handy overview of applications shortcuts.<br/>Easy to use, just <strong>press <em>⌘</em> twice and hold</strong> to see the list.</h2>
+            </div>
+            <section id="history">
+                <div class="header">
+                    <p>KeyClu releases on <a href="https://github.com/Anze/KeyCluCask/releases/" class="macos"><em>GitHub</em></a></p>
+                </div>
+                <div class="content">
+
+                    <h2>Version History</h2>
+                    <a id="history"></a>
+
+                    <div class="release">
+                        <h3>v0.27</h3>
+                        <p class="date">July 2024</p>
+                        <ul class="primary">
+                            <li>fixed memory leak issue</li>
+                            <li>fixed issue #74</li>
+                            <li>added possibility to change Bookmark title and icon #70</li>
+                            <li>update sparkle (security fix)</li>
+                            <li><a href="https://github.com/Anze/KeyCluConverter" class="white">KeyClu Converter</a>, allows to convert existing `.kcustom` files to `.keyclu`</li>
+                        </ul>
+                    </div>
+
+                    <div class="no-spoiler">
+
+                    <div class="release">
+                        <h3>v0.26</h3>
+                        <p class="date">April 2024</p>
+                        <ul class="primary">
+                            <li>fixed issue with non working "power" button in Settings under certain conditions</li>
+                            <li>fixed issue with not properly loading translation for macOS hotkeys in older macOS causing not display hotkeys completely</li>
+                            <li>improved import/export of "My Shortcuts", now preserve shortcut groups order</li>
+                            <li>improved settings ui</li>
+                            <li>added multi monitor support #49</li>
+                            <li>added link for "Extensions page" at "My Shortcuts"  #67 (display missing shortcuts for apps and more)</li>
+                            <li>added "Bookmarked" group #68</li>
+                            <li>added "Collapsible" groups #69</li>
+                            <li>moved filtering shortcuts functionality to "Experimental Features" as not stable enough</li>
+                        </ul>
+                    </div>
+
+                    <div class="release">
+                        <h3>v0.25</h3>
+                        <p class="date">March 2024</p>
+                        <ul class="primary">
+                            <li>fixed issue with focus Settings after updating My Shortcuts</li>
+                            <li>fixed issue with highlight</li>
+                            <li>enhance ui, finally lineup shortcuts</li>
+                            <li>added possibility to list macOS Keyboard Shortcuts (Integrations section)</li>
+                        </ul>
+                    </div>
+
+
+                        <div class="release">
+                            <h3>v0.24</h3>
+                            <p class="date">March 2024</p>
+                            <ul class="primary">
+                                <li>fixed issue #59 with activation hotkeys</li>
+                                <li>fixed issue #60 with fallback to desktop after close panel</li>
+                                <li>fixed issue #61 with highlighting option</li>
+                                <li>improved skhd parsing, sorting order</li>
+                                <li>improved ui</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.23.1</h3>
+                            <p class="date">March 2024</p>
+                            <ul class="primary">
+                                <li>fixed issue with parser of skhd format</li>
+                                <li>enhanced ui: now skhd sections always displayed in alphabetical order</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.23</h3>
+                            <p class="date">March 2024</p>
+                            <ul class="primary">
+                                <li>fixed issue with apps without bundle identifier</li>
+                                <li>fixed issue with conditions to activate Shortcuts & Persistent Panel, less accidental activation</li>
+                                <li>fixed issue with skhd files, now checking all default locations</li>
+                                <li>improved ui: background color tweaked for a smoother experience for macOS < 13</li>
+                                <li>added possibility to show only skhd hotkeys with `--toggle-panel` cli param (experimental feature)</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.22</h3>
+                            <p class="date">February 2024</p>
+                            <ul class="primary">
+                                <li>fixed bug with Shortcuts Panel being showed briefly if called from status menu bar or via cli</li>
+                                <li>fixed issue of incorrect targeting KeyClu as active app</li>
+                                <li>fixed issue with forced request of Notification Permission</li>
+                                <li>improved app stability and performance</li>
+                                <li>added option to show/hide My Shortcuts (Settings -> Integrations)</li>
+                                <li>added option to show/hide skhd shortcuts (Settings -> Integrations), more details on wiki page</li>
+                                <li>added possibility to export App's menu item shortcuts to Markdown file via button M on the bottom right of Command bar</li>
+                                <li>removed feature to access Settings via tapping 3x control key when App icon is hidden</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.21</h3>
+                            <p class="date">February 2024</p>
+                            <ul class="primary">
+                                <li>fixed filtering field issues (might be not all)</li>
+                                <li>fixed app stability and performance issues</li>
+                                <li>changed menu item actions to be accessible with a simple tap on the "menu" (bookmark) icon</li>
+                                <li>enhanced accessibility privileges verification</li>
+                                <li>added possibility to close Persistent Panel with pressing ⎋ key</li>
+                                <li>added silent launch and quit options for the app</li>
+                                <li>removed gap for Persistent Panel when aligned to the left or right</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.20</h3>
+                            <p class="date">February 2024</p>
+                            <ul class="primary">
+                                <li>fixed app crashes on certain conditions</li>
+                                <li>added filtering functionality for menu items, available when Show credits line is enabled in Window Presets (not available in Persistent Panel)</li>
+                                <li>improved permission checks in General Presets</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.19</h3>
+                            <p class="date">January 2024</p>
+                            <ul class="primary">
+                                <li>fixed issue with clicking on the shortcut empty space</li>
+                                <li>enhanced the key capture mechanism to minimize unintended Shortcuts Panel activations</li>
+                                <li>implemented shortcut highlighting for enhanced user experience when modifier keys are pressed</li>
+                                <li>implemented configurable option to allow dismiss Shortcuts Panel by releasing all modifier keys or pressing any non-modifier key</li>
+                                <li>changed App icon</li>
+                                <li>changed behavior of the Shortcuts Panel, now it closes when clicking on a menu item</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.18</h3>
+                            <p class="date">December 2023</p>
+                            <ul class="primary">
+                                <li>fixed issue with F keys (F13 to F20)</li>
+                                <li>added possibility to control Shortcut Panel width and height</li>
+                                <li>added possibility to control Persistent Panel width, height and position (to control position pick "desired" option in Window Settings)</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.17</h3>
+                            <p class="date">November 2023</p>
+                            <ul class="primary">
+                                <li>small cosmetic update for macOS 11</li>
+                                <li>update UI wording and phrases</li>
+                                <li>improve performance</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.16</h3>
+                            <p class="date">October 2023</p>
+                            <ul class="primary">
+                                <li>fixed a bug that occurred when attempting to edit two columns simultaneously</li>
+                                <li>fixed a bug that was causing not all menu elements to be displayed</li>
+                                <li>fixed a bug that prevent menu element to be hovered properly</li>
+                                <li>fixed a bug with incorrect scroll bar height calculation for Persistent Panel</li>
+                                <li>added the option to adjust the delay to support Sticky Keys (Settings -> Advanced)</li>
+                                <li>introduced a new feature for grouping in "My Shortcuts"</li>
+                                <li>improved the title editing experience for "My Shortcuts" (now with double click/tap)</li>
+                                <li>improved the format of the exported file, making it more human-readable</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.15</h3>
+                            <p class="date">October 2023</p>
+                            <ul class="primary">
+                                <li>added the capability to switch displaying and bookmarking status of all Custom Shortcuts by clicking table column</li>
+                                <li>added a notification to indicate the success or failure of the import process</li>
+                                <li>improved the performance</li>
+                                <li>improved sending process of user defined Shortcuts</li>
+                                <li>improved the distribution and filled the columns more evenly</li>
+                                <li>introduced a custom file extension for import/export Custom Shortcuts files</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.14</h3>
+                            <p class="date">October 2023</p>
+                            <em>Warning: this release contains experimental feature Registering Custom Shortcuts</em>
+                            <ul class="primary">
+                                <li>fixed typo in English spelling</li>
+                                <li>fixed Hide Shortcut Panel behaviour when App is not paused</li>
+                                <li>fixed vertical layout in macOS 12</li>
+                                <li>added possibility to disable trigger for Persistent Panel</li>
+                                <li>added possibility to Registering Custom Shortcuts</li>
+                                <li>improved performance</li>
+                                <li>removed button for Login Items in macOS 11 & 12, as can not open proper place</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.13</h3>
+                            <p class="date">September 2023</p>
+                            <ul class="primary">
+                                <li>fixed crash when pause and toggle hide/show menu bar icon</li>
+                                <li>added opening Settings Window when opening app while it is running, for people who hide menu bar icon</li>
+                                <li>added possibility to show app icon</li>
+                                <li>improved Setting Window view</li>
+                                <li>changed behaviour of `--show-shortcuts` param from *show* to *toggle* when app is paused</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.12</h3>
+                            <p class="date">September 2023</p>
+                            <ul class="primary">
+                                <li>fixed issue with hiding persistent panel when focused</li>
+                                <li>improved work with multi-monitor environment</li>
+                                <li>added integration with <a href="https://www.houdah.com/customShortcuts/?from=keyclu">CustomShortcuts</a> to customize shortcuts</li>
+                                <li>added possibility to pause/resume app</li>
+                                <li>added possibility to toggle Shortcuts panel from menu</li>
+                                <li>added possibility to toggle Persistent panel from menu</li>
+                                <li>updated Settings window to modern look</li>
+                                <li>updated app icon, thanks to <a href="https://github.com/wanwindwalker">wanwindwalker</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.11</h3>
+                            <p class="date">August 2023</p>
+                            <ul class="primary">
+                                <li>fixed bug which might lead to crash in macOS 14</li>
+                                <li>changed accessing Settings window shortcut key, from pressing <b>⌘</b>(cmd) 3 times to <b>⌃</b>(ctrl) 3 times</li>
+                                <li>added persistent panel (basic), toggle it by pressing <b>⌘</b>(cmd) 3 times</li>
+                                <li>added support skhd with command line params</li>
+                                <li>added possibility to trigger show shortcuts panel by passing param to binary *
+                                    <ul class="secondary highlight">
+                                        <li style="list-style: none;"><code class="language-bash">KeyClu.app/Contents/MacOS/KeyClu <span class="nt">--show-shortcuts</span></code></li>
+                                    </ul>
+                                    * It's important to note: due to workflow, there's a deliberate delay of 0.5 seconds before the window appears.
+                                </li>
+                                <li>added possibility to toggle persistent panel by passing param to binary
+                                    <ul class="secondary highlight">
+                                        <li style="list-style: none;"><code class="language-bash">KeyClu.app/Contents/MacOS/KeyClu <span class="nt">--toggle-persistent</span></code></li>
+                                    </ul>
+                                </li>
+                                <li>improved handling of activation key(s)</li>
+                                <li>improved bookmark targeting</li>
+                                <li>improved symbols looks</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.10</h3>
+                            <p class="date">August 2023</p>
+                            <ul class="primary">
+                                <li>fix issue when some keys was not shown</li>
+                                <li>fix issue when menu element was not shown if title was empty, for example in firefox (bug?), whatsapp (hidden menu?)</li>
+                                <li>fix issue when menu group was shown even if no submenu elements left to present</li>
+                                <li>added option to choose preferred scheme to display</li>
+                                <li>added option to limit amount of elements for browsers</li>
+                                <li>added option to truncate long menu titles</li>
+                                <li>improved performance</li>
+                                <li>minor interface improvements</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.9</h3>
+                            <p class="date">August 2023</p>
+                            <ul class="primary">
+                                <li>fix issue with icon in Settings in macOS 11 & 12</li>
+                                <li>fix issue with hover effect on elements in macOS 11 & 12</li>
+                                <li>fix issue with possible crash when list of shortcuts is too small</li>
+                                <li>added hide/show shortcuts locally and globally feature (right click element to pick action)</li>
+                                <li>added bookmarks to shortcuts feature</li>
+                                <li>added settings to show/hide bookmarked and user-hidden elements</li>
+                                <li>added legends to preview window in Settings</li>
+                                <li>added images to help user grant permission</li>
+                                <li>known issue: no horizontal line present when credits are shown in macOS 14</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.8.1</h3>
+                            <p class="date">July 2023</p>
+                            <ul class="primary">
+                                <li>fixed issue with autoupdater</li>
+                                <li>fixed issue with incorrect activation key behaviour</li>
+                                <li>improving look, allow to hide credits</li>
+                                <li>add activation key for Settings when menubar icon is hidden (quickly press ⌘ 3 times)</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.8</h3>
+                            <p class="date">July 2023</p>
+                            <ul class="primary">
+                                <li>fixed shortcuts with non standard keys (umlauts etc)</li>
+                                <li>added other way to activate shortcut list</li>
+                                <li>added possibility to hide icon in menubar</li>
+                                <li>added autoupdater</li>
+                                <li>improved views and scrolls</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.7</h3>
+                            <p class="date">July 2023</p>
+                            <ul class="primary">
+                                <li>fixed issue for displays with larger texts</li>
+                                <li>added possibility to set delay for shortcuts list to appear</li>
+                                <li>fixed issue with showing empty (duplicate) menus</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.6</h3>
+                            <p class="date">July 2023</p>
+                            <ul class="primary">
+                                <li>improved support macOS Sonoma (14)</li>
+                                <li>updated symbols look for better experience (+, -, *, delete, backspace)</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.5</h3>
+                            <p class="date">July 2023</p>
+                            <ul class="primary">
+                                <li>Lower requirements down to macOS 11</li>
+                                <li>Better handling of shortcuts</li>
+                                <li>Allow to change font size</li>
+                            </ul>
+                        </div>
+
+                        <div class="release">
+                            <h3>v0.4</h3>
+                            <p class="date">June 2023</p>
+
+                            <p>Initial Release</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p id="copyright">
+                Copyright © 2007-2024 Sergii Tatarenkov
+            </p>
+        </footer>
+        <script src="/js/jquery-1.3.2.min.js"></script>
+        <script src="/js/jquery.prettyPhoto.js" defer></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function(){
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+
+                $(".spoiler").append('<button class="spoiler-title">Older notes</button>');
+                $(".spoiler .release").hide();
+                $(".spoiler-title").click(function() {
+                    $(".spoiler .release").show();
+                    $(this).remove();
+                });
+            });
+        </script>
+    </body>
+</html>
