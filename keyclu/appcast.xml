@@ -3,22 +3,19 @@
     <channel>
         <title>KeyClu</title>
         <item>
-            <title>0.27</title>
-            <pubDate>Thu, 11 Jul 2024 03:44:13 +0200</pubDate>
-            <sparkle:version>22721</sparkle:version>
-            <sparkle:shortVersionString>0.27</sparkle:shortVersionString>
+            <title>0.28</title>
+            <pubDate>Wed, 02 Oct 2024 00:11:44 +0200</pubDate>
+            <sparkle:version>22732</sparkle:version>
+            <sparkle:shortVersionString>0.28</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <ul>
-                    <li>fixed memory leak issue</li>
-                    <li>fixed issue #74</li>
-                    <li>added possibility to change Bookmark title and icon #70</li>
-                    <li>update sparkle (security fix)</li>
-                    <li><a href="https://github.com/Anze/KeyCluConverter">KeyClu Converter</a>, allows to convert existing `.kcustom` files to `.keyclu`</li>
+                    <li>fixed issue displaying skhd #94</li>
+                    <li>fixed issue displaying empty window on macos15 #96</li>
                 </ul>
             ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.27/KeyClu_v0.27.dmg" length="5339462" type="application/octet-stream" sparkle:edSignature="AUUoHSJYRGhvuf8nryr1lqCR37VB852CyQDTpWrC07HU9EaQSaINyxO8EaBpPs9rQVB90jCQza7vR4A13XmtDg=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.28/KeyClu_v0.28.dmg" length="5319299" type="application/octet-stream" sparkle:edSignature="Gql7WrKLMh8m2pDCuKDCYbLf+Q1+FHXuc3AkLrkcXeJCTbRfkrajDMo530Jd1ED/Wb4nI90mRU6QeimuwMKvBQ=="/>
         </item>
     </channel>
 </rss>
