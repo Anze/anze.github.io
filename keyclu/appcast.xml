@@ -3,19 +3,29 @@
     <channel>
         <title>KeyClu</title>
         <item>
-            <title>0.28</title>
-            <pubDate>Wed, 02 Oct 2024 00:11:44 +0200</pubDate>
-            <sparkle:version>22732</sparkle:version>
-            <sparkle:shortVersionString>0.28</sparkle:shortVersionString>
+            <title>0.29</title>
+            <pubDate>Fri, 01 Nov 2024 00:33:24 +0100</pubDate>
+            <sparkle:version>23917</sparkle:version>
+            <sparkle:shortVersionString>0.29</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
+                <style>ul{list-style-type:none;padding:0;margin:0;}li{display:flex;align-items:center;margin:1px;}li::before{content:attr(class);text-transform:uppercase;display:inline-block;padding:2px 3px 1px 3px;margin-right:5px;border-radius:3px;color:white;font-size:0.48rem;font-weight:bold;}li.new::before{background-color: #2196f3;}li.fix::before{background-color: #f44336;}li.upd::before{background-color: #9829bd;}</style>
                 <ul>
-                    <li>fixed issue displaying skhd #94</li>
-                    <li>fixed issue displaying empty window on macos15 #96</li>
+                    <li class="fix">fixed issue with highlight menu items</li>
+                    <li class="new">added new colors for menu item highlight</li>
+                    <li class="new">added possibility ignore windows #99</li>
+                    <li class="new">added possibility to change activation key #90, #81 and #87</li>
+                    <li class="new">added customizable colors and an alternative highlight mode for shortcuts #76</li>
+                    <li class="new">added toggles for few options to command bar #65</li>
+                    <li class="new">added "Show" button on Notification to highlight exported Markdown file</li>
+                    <li class="new">improved modifier keys processing (support Hyperkey) #75</li>
+                    <li class="upd">relocated "My Shortcuts" switch to the "My Shortcuts" section</li>
+                    <li class="upd">small improvements to "My Shortcuts" section</li>
                 </ul>
             ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.28/KeyClu_v0.28.dmg" length="5319299" type="application/octet-stream" sparkle:edSignature="Gql7WrKLMh8m2pDCuKDCYbLf+Q1+FHXuc3AkLrkcXeJCTbRfkrajDMo530Jd1ED/Wb4nI90mRU6QeimuwMKvBQ=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.29/KeyClu_v0.29.dmg" length="5509787" type="application/octet-stream" sparkle:edSignature="Fc+0ep5N0Ife9NP9WWp
+VBLsIEWf3soJMV2bibt3rA+rgJ+1dFUdHwEQ1Rq2MVVPb6W0XHX/qb5UYtu4ri4GRDQ=="/>
         </item>
     </channel>
 </rss>
