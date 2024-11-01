@@ -24,8 +24,7 @@
                 </ul>
             ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.29/KeyClu_v0.29.dmg" length="5509787" type="application/octet-stream" sparkle:edSignature="Fc+0ep5N0Ife9NP9WWp
-VBLsIEWf3soJMV2bibt3rA+rgJ+1dFUdHwEQ1Rq2MVVPb6W0XHX/qb5UYtu4ri4GRDQ=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.29/KeyClu_v0.29.dmg" length="5509787" type="application/octet-stream" sparkle:edSignature="Fc+0ep5N0Ife9NP9WWpVBLsIEWf3soJMV2bibt3rA+rgJ+1dFUdHwEQ1Rq2MVVPb6W0XHX/qb5UYtu4ri4GRDQ=="/>
         </item>
     </channel>
 </rss>
