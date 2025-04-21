@@ -3,28 +3,31 @@
     <channel>
         <title>KeyClu</title>
         <item>
-            <title>0.29</title>
-            <pubDate>Fri, 01 Nov 2024 00:33:24 +0100</pubDate>
-            <sparkle:version>23917</sparkle:version>
-            <sparkle:shortVersionString>0.29</sparkle:shortVersionString>
+            <title>0.30</title>
+            <pubDate>Mon, 21 Apr 2025 18:41:38 +0200</pubDate>
+            <sparkle:version>25336</sparkle:version>
+            <sparkle:shortVersionString>0.30</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <style>ul{list-style-type:none;padding:0;margin:0;}li{display:flex;align-items:center;margin:1px;}li::before{content:attr(class);text-transform:uppercase;display:inline-block;padding:2px 3px 1px 3px;margin-right:5px;border-radius:3px;color:white;font-size:0.48rem;font-weight:bold;}li.new::before{background-color: #2196f3;}li.fix::before{background-color: #f44336;}li.upd::before{background-color: #9829bd;}</style>
                 <ul>
-                    <li class="fix">fixed issue with highlight menu items</li>
-                    <li class="new">added new colors for menu item highlight</li>
-                    <li class="new">added possibility ignore windows #99</li>
-                    <li class="new">added possibility to change activation key #90, #81 and #87</li>
-                    <li class="new">added customizable colors and an alternative highlight mode for shortcuts #76</li>
-                    <li class="new">added toggles for few options to command bar #65</li>
-                    <li class="new">added "Show" button on Notification to highlight exported Markdown file</li>
-                    <li class="new">improved modifier keys processing (support Hyperkey) #75</li>
-                    <li class="upd">relocated "My Shortcuts" switch to the "My Shortcuts" section</li>
-                    <li class="upd">small improvements to "My Shortcuts" section</li>
+                    <li class="fix">fixed issue with Persistent Panel</li>
+                    <li class="fix">fixed issue with some keys not being displayed</li>
+                    <li class="fix">fixed issue with displaying macOS keyboard shortcuts #112</li>
+                    <li class="upd">improved processing app focus (auto-switch apps when it is not intended) #82, #103</li>
+                    <li class="upd">improved key displaying #109</li>
+                    <li class="upd">improved Launch at Login behaviour</li>
+                    <li class="upd">improved performance</li>
+                    <li class="new">added possibility to manage ignore apps with My Shortcuts list</li>
+                    <li class="new">added possibility to delete app from My Shortcuts list (custom shortcuts kept)</li>
+                    <li class="new">added commands to manage apps of ignore list (see cli params page)</li>
+                    <li class="new">added possibility to change elements size on command bar #65</li>
+                    <li class="new">added possibility to highlight partial modifiers match #107</li>
+                    <li class="new">added possibility to call macOS and skhd Hotkeys Panels from menu bar icon</li>
                 </ul>
             ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.29/KeyClu_v0.29.dmg" length="5509787" type="application/octet-stream" sparkle:edSignature="Fc+0ep5N0Ife9NP9WWpVBLsIEWf3soJMV2bibt3rA+rgJ+1dFUdHwEQ1Rq2MVVPb6W0XHX/qb5UYtu4ri4GRDQ=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.30/KeyClu_v0.30.dmg" length="5895754" type="application/octet-stream" sparkle:edSignature="5GsxGUN3xT85hH2VXcRU2jkUMnDsPU2riVRtJ6KjiVT1/YXui92WaN5aFfMgJJf3QiQZec8nxIEV2ob4G6uwDw=="/>
         </item>
     </channel>
 </rss>
