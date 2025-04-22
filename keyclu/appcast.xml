@@ -3,14 +3,15 @@
     <channel>
         <title>KeyClu</title>
         <item>
-            <title>0.30</title>
-            <pubDate>Mon, 21 Apr 2025 18:41:38 +0200</pubDate>
-            <sparkle:version>25336</sparkle:version>
-            <sparkle:shortVersionString>0.30</sparkle:shortVersionString>
+            <title>0.30.1</title>
+            <pubDate>Tue, 22 Apr 2025 02:40:22 +0200</pubDate>
+            <sparkle:version>25337</sparkle:version>
+            <sparkle:shortVersionString>0.30.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <style>ul{list-style-type:none;padding:0;margin:0;}li{display:flex;align-items:center;margin:1px;}li::before{content:attr(class);text-transform:uppercase;display:inline-block;padding:2px 3px 1px 3px;margin-right:5px;border-radius:3px;color:white;font-size:0.48rem;font-weight:bold;}li.new::before{background-color: #2196f3;}li.fix::before{background-color: #f44336;}li.upd::before{background-color: #9829bd;}</style>
                 <ul>
+                    <li class="fix">fixed issue with processing cli params</li>
                     <li class="fix">fixed issue with Persistent Panel</li>
                     <li class="fix">fixed issue with some keys not being displayed</li>
                     <li class="fix">fixed issue with displaying macOS keyboard shortcuts #112</li>
@@ -25,9 +26,9 @@
                     <li class="new">added possibility to highlight partial modifiers match #107</li>
                     <li class="new">added possibility to call macOS and skhd Hotkeys Panels from menu bar icon</li>
                 </ul>
-            ]]>
+                ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.30/KeyClu_v0.30.dmg" length="5895754" type="application/octet-stream" sparkle:edSignature="5GsxGUN3xT85hH2VXcRU2jkUMnDsPU2riVRtJ6KjiVT1/YXui92WaN5aFfMgJJf3QiQZec8nxIEV2ob4G6uwDw=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.30.1/KeyClu_v0.30.1.dmg" length="5895796" type="application/octet-stream" sparkle:edSignature="B9wUepIwK5R7yZ/WxnAZImnSL30OVVu/vVnaIu5KYZNAgXZmrwnbqPUtltMr04AD3JTpJiR+YXq+n7xZs3nzDg=="/>
         </item>
     </channel>
 </rss>
