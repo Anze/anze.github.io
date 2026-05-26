@@ -12,10 +12,15 @@
 
         <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css">
         <link href="/css/shared.css?5" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/style.css?4" media="screen" rel="stylesheet" type="text/css">
+        <link href="/css/style.css?6" media="screen" rel="stylesheet" type="text/css">
         <link href="/css/pap8gno.css" media="screen" rel="stylesheet" type="text/css">
 
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+        <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
         <header role="banner">
@@ -32,53 +37,23 @@
         </header>
 
         <main role="main">
-            <section id="intro" class="panels">
-                <div class="group">
-                    <h2>Sergii Tatarenkov</h2>
+            <section id="app-intro">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="icon">
+                        <img src="/favicon.svg" class="ficon">
+                    </div>
+                    <div class="title">
+                        <h1>Sergii Tatarenkov</h1>
+                        <h2>making the world better</h2>
+                    </div>
                 </div>
             </section>
-            <section id="features">
-                <p>Software Engineer, Architect, making world better.</p>
-
-                <!--ul>
-                    <li>
-                        <h3>Web Development</h3>
-                        <p>HTML, XML, XSLT, CSS, Canvas, Bootstrap, PHP, Zend, Laravel, Symfony, Smarty, Blade, Twig, Pug (Jade), JavaScript, jQuery, nodejs, PHPUnit, Selenium</p>
-                    </li>
-                    <li>
-                        <h3>Databases & Queues</h3>
-                        <p>SQLite, MySQL, MongoDB, Sphinx, Solr, Elasticsearch, Memcache(d), Redis, RabbitMQ</p>
-                    </li>
-                    <li>
-                        <h3>Software Development</h3>
-                        <p>C++, C#, Python, RoR, go, SwiftUI</p>
-                    </li>
-                    <li>
-                        <h3>Logging & Monitoring</h3>
-                        <p>Graylog, Prometheus, Grafana</p>
-                    </li>
-                    <li>
-                        <h3>Console, Network & Cloud</h3>
-                        <p>bash, phing, apache, nginx, docker, kubernetes, aws, Ripe&nbsp;NCC</p>
-                    </li>
-                    <li>
-                        <h3>CI/CD</h3>
-                        <p>Capistrano, Bamboo, ArgoCD, svn, git</p>
-                    </li>
-                    <li>
-                        <h3>Tracking & Documentation</h3>
-                        <p>Trello, Jira, Confluence, OpenAPI (Swagger)</p>
-                    </li>
-                    <li>
-                        <h3>Playing</h3>
-                        <p>PC, PS, Switch, piano</p>
-                    </li>
-                </ul-->
-                <p></p>
-            </section>
+            <div id="description">
+                <h2>There is an engineer behind the systems.<br/>Turning ideas into something that just works.</h2>
+            </div>
         </main>
-
-        <footer role="contentinfo">
+        <footer role="contentinfo" class="ifooter">
             <p id="copyright">
                 Copyright © 2007-2026 Sergii Tatarenkov
             </p>

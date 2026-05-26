@@ -329,6 +329,12 @@ section#app-intro div.download {
         color: #ca0000;
     }
 
+    .ifooter {
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     footer > * {
         color: #fff;
     }
@@ -506,4 +512,8 @@ pre code {
 
 a.white {
     color: white;
+}
+
+.ficon {
+  filter: invert(45%) sepia(18%) saturate(1200%) hue-rotate(170deg) brightness(90%) contrast(90%);
 }
