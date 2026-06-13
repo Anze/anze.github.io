@@ -1,0 +1,89 @@
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/keyclu/support/github-downloads.svg") {
+      const cache = caches.default;
+      const cacheKey = new Request(url.toString(), request);
+
+      // 1 day cache
+      const cached = await cache.match(cacheKey);
+      if (cached) { return cached; }
+
+      const apiUrl = "https://api.github.com/repos/Anze/KeyCluCask/releases";
+
+      const res = await fetch(apiUrl, {
+        headers: {
+          "User-Agent": "cloudflare-worker",
+          "Accept": "application/vnd.github+json"
+        }
+      });
+
+      if (!res.ok) {
+        return new Response("GitHub API error", { status: 500 });
+      }
+
+      const data = await res.json();
+
+      let totalDownloads = 0;
+
+      for (const release of data) {
+        for (const asset of release.assets || []) {
+          totalDownloads += asset.download_count || 0;
+        }
+      }
+
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="144" height="20" role="img" aria-label="github downloads: ${formatNumber(totalDownloads)}">
+	<title>github downloads: ${formatNumber(totalDownloads)}</title>
+	<filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+	<linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+	<clipPath id="r">
+    <rect width="144" height="20" rx="3"/>
+  </clipPath>
+	<g clip-path="url(#r)">
+    <rect width="107" height="20" fill="#555"/>
+    <rect x="107" width="44" height="20" fill="#4b0"/>
+    <rect width="144" height="20" fill="url(#s)"/>
+  </g>
+	<g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+		<g transform="scale(.1)">
+			<g aria-hidden="true" fill="#010101">
+				<text x="545" y="150" fill-opacity=".8" filter="url(#blur)" textLength="970">github downloads</text>
+				<text x="545" y="150" fill-opacity=".3" textLength="970">github downloads</text>
+			</g>
+			<text x="545" y="140" textLength="970">github downloads</text>
+		</g>
+		<g transform="scale(.1)">
+			<g aria-hidden="true" fill="#010101">
+				<text x="1245" y="150" fill-opacity=".8" filter="url(#blur)" textLength="270">${formatNumber(totalDownloads)}</text>
+				<text x="1245" y="150" fill-opacity=".3" textLength="270">${formatNumber(totalDownloads)}</text>
+			</g>
+			<text x="1245" y="140" textLength="270">${formatNumber(totalDownloads)}</text>
+		</g>
+	</g>
+</svg>`;
+
+      const response = new Response(svg, {
+        headers: {
+          "Content-Type": "image/svg+xml",
+          "Cache-Control": "public, max-age=86400, s-maxage=86400"
+        }
+      });
+
+      ctx.waitUntil(cache.put(cacheKey, response.clone()));
+      return response;
+    }
+
+    return new Response("Not found", { status: 404 });
+  }
+}
+
+function formatNumber(num) {
+  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+  return String(num);
+}
+
