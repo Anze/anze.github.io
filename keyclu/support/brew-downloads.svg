@@ -2,7 +2,7 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    if (url.pathname === "/keyclu/support/github-downloads.svg") {
+    if (url.pathname === "/keyclu/support/brew-downloads.svg") {
       const cache = caches.default;
       const cacheKey = new Request(url.toString(), request);
 
@@ -10,32 +10,29 @@ export default {
       const cached = await cache.match(cacheKey);
       if (cached) { return cached; }
 
-      const apiUrl = "https://api.github.com/repos/Anze/KeyCluCask/releases";
+      const apiUrl = "https://formulae.brew.sh/api/cask/keyclu.json";
 
       const res = await fetch(apiUrl, {
         headers: {
           "User-Agent": "cloudflare-worker",
-          "Accept": "application/vnd.github+json"
+          "Accept": "application/json"
         }
       });
 
+      let yearInstalls = 0;
+
       if (!res.ok) {
-        return new Response("GitHub API error", { status: 500 });
-      }
-
-      const data = await res.json();
-
-      let totalDownloads = 0;
-
-      for (const release of data) {
-        for (const asset of release.assets || []) {
-          totalDownloads += asset.download_count || 0;
-        }
+        return new Response("Failed to fetch Homebrew data", {
+          status: 500,
+        });
+      } else {
+        const json = await res.json();
+        yearInstalls = json.analytics?.install?.["365d"]?.keyclu ?? 0;
       }
 
       const svg = badge(
-        "github downloads",
-        formatNumber(totalDownloads),
+        "brew installs",
+        formatNumber(yearInstalls),
         "#4c1"
       );
 
@@ -56,12 +53,12 @@ export default {
 
 function formatNumber(num) {
   if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
-  if (num >= 1_000) return (num / 1_000).toFixed(1).replace(/\.0$/, "") + "K";
+  if (num >= 10_000) return (num / 10_000).toFixed(1).replace(/\.0$/, "") + "K";
   return String(num);
 }
 
 function badge(label, message, color) {
-  const labelWidth = Math.max(70, label.length * 6.5 + 5);
+  const labelWidth = Math.max(70, label.length * 6.3);
   const valueWidth = Math.max(40, String(message).length * 7);
   const labelWidthM = 10 * labelWidth / 2;
   const valueWidthM = 10 * labelWidth + 10 * valueWidth / 2;
@@ -72,7 +69,7 @@ function badge(label, message, color) {
   <filter id="blur">
     <feGaussianBlur stdDeviation="16"/>
   </filter>
-    <linearGradient id="s" x2="0" y2="100%">
+  <linearGradient id="s" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
