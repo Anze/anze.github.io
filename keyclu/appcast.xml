@@ -3,22 +3,26 @@
     <channel>
         <title>KeyClu</title>
         <item>
-            <title>0.31</title>
-            <pubDate>Mon, 12 Jan 2026 20:55:20 +0100</pubDate>
-            <sparkle:version>27097</sparkle:version>
-            <sparkle:shortVersionString>0.31</sparkle:shortVersionString>
+            <title>0.32</title>
+            <pubDate>Fri, 17 Jul 2026 23:01:37 +0200</pubDate>
+            <sparkle:version>30147</sparkle:version>
+            <sparkle:shortVersionString>0.32</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <style>ul{list-style-type:none;padding:0;margin:0;}li{display:flex;align-items:center;margin:1px;}li::before{content:attr(class);text-transform:uppercase;display:inline-block;padding:2px 3px 1px 3px;margin-right:5px;border-radius:3px;color:white;font-size:0.48rem;font-weight:bold;}li.new::before{background-color: #2196f3;}li.fix::before{background-color: #f44336;}li.upd::before{background-color: #9829bd;}</style>
                 <ul>
-                    <li class="upd">improved indication of whether a menu group is folded or unfolded (partial solution for hiding functionality for #124)</li>
-                    <li class="fix">improved app focus handling #82</li>
-                    <li class="new">added Zebra mode for alternating background item highlights #128</li>
-                    <li class="new">added support for SKHD modes #100</li>
+                    <li class="fix">fixed small UI issues</li>
+                    <li class="fix">fixed typos #151</li>
+                    <li class="fix">fixed toggle-panel failed to display My Shortcuts #141</li>
+                    <li class="new">added possibility to display  menu items (Settings → Appearance → Visibility)</li>
+                    <li class="new">added possibility to limit activation hotkey to sides: left, right, either (Settings → General → Activation)</li>
+                    <li class="new">added support for multiple languages #119 #153</li>
+                    <li class="new">added possibility to display macOS gestures #140</li>
+                    <li class="new">added Jitouch integration to display gestures</li>
                 </ul>
                 ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.31/KeyClu_v0.31.dmg" length="5923704" type="application/octet-stream" sparkle:edSignature="804ibJJb3x0U9nWEBJsfZK8ERcbXVz9fYwCVMxiGAi6N94YBMEdrz+HTs2BoneRdVn6tY3rsnDj6EOFw7TzOAg=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.32/KeyClu_v0.32.dmg" length="6537155" type="application/octet-stream" sparkle:edSignature="eXg6AJmiBZDqhVHx3ZgIa1xmTI8QKfPbxltriP+Jq7fZBfS/ltGp1al6F1IV/2dQwxGWJbbc5Lsu76hREJ21CA=="/>
         </item>
     </channel>
 </rss>
