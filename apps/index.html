@@ -1,112 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Language" content="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps · Sergii Tatarenkov</title>
+  <meta name="description" content="Good Old Calendar, KeyClu and Notch Pet — small, focused native macOS apps." />
 
-        <meta name="description" content="Apps by Sergii Tatarenkov">
-        <meta name="keywords" content="Apps, macOS">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="macOS Applications" />
+  <meta property="og:description" content="A handful of small, native macOS apps — a shortcut overlay, a notch companion, and a simple calendar." />
+  <meta property="og:type" content="website" />
 
-        <title>Anze&#039;s Laboratory &raquo; Apps</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-        <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/shared.css?4" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/style.css?6" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/pap8gno.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Apps by Sergii Tatarenkov","url":"https://sergii.tatarenkov.name/apps/","author":{"@type":"Person","name":"Sergii Tatarenkov","url":"https://sergii.tatarenkov.name","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/me.png","width":"512","height":"512"},"sameAs":["https://sergii.tatarenkov.name"]},"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"SoftwareApplication","name":"Good Old Calendar","alternateName":"GoCalendar","url":"https://sergii.tatarenkov.name/apps/gocalendar/","image":"https://sergii.tatarenkov.name/images/gocalendar/gocalendar.png","operatingSystem":"macOS 11+","applicationCategory":"ProductivityApplication"}},{"@type":"ListItem","position":2,"item":{"@type":"SoftwareApplication","name":"KeyClu","alternateName":"keyclu","url":"https://sergii.tatarenkov.name/apps/keyclu/","image":"https://your-domain.com/images/keyclu/keyclu.png","operatingSystem":"macOS 11+","applicationCategory":"ProductivityApplication"}},{"@type":"ListItem","position":3,"item":{"@type":"SoftwareApplication","name":"Notch Pet","alternateName":"NotchPet","url":"https://sergii.tatarenkov.name/apps/notchpet/","image":"https://sergii.tatarenkov.name/images/notchpet/notchpet.png","operatingSystem":"macOS 12+","applicationCategory":"EntertainmentApplication"}}]}</script>
+</head>
 
-        <link rel="icon" href="/favicon.ico" sizes="any">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<body class="min-h-screen max-w-5xl mx-auto flex flex-col text-zinc-100">
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-path"><span class="seg">~</span><span class="sep">/</span><span class="seg">apps</span></div>
+      <nav class="nav-links">
+        <a href="/">me</a>
+        <a href="#" class="active">apps</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <main class="flex-1 px-6 md:px-12 pt-16 pb-8">
+    <section class="hero wrap pb-5">
+      <p class="prompt filter-row">
+        ls -lx apps/ | grep [
+        <span class="filter-flag active" data-cat="all">all</span> |
+        <span class="filter-flag" data-cat="productivity">productivity</span> |
+        <span class="filter-flag" data-cat="entertainment">entertainment</span>
+        ]<span class="cursor"></span>
+      </p>
+      <h1 class="lede-title">Apps</h1>
+      <p class="lede">Small native macOS apps - some for getting things done, some just for fun. No accounts, no tracking.</p>
+    </section>
 
-        <link rel="manifest" href="/site.webmanifest">
-    </head>
-    <body>
-        <header role="banner">
-            <div id="logo">
-                <a href="/">Anze&#039;s Laboratory</a>
+    <section class="wrap">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" id="app-grid">
+          <a href="/apps/gocalendar/" class="app-card group block hover:bg-zinc-900/70 transition" data-category="productivity">
+            <div class="header-row">
+              <div class="w-24 h-24 flex items-center justify-center">
+                <img class="" src="/images/gocalendar/gocalendar.png">
+              </div>
+              <h2 class="group-hover:text-white transition">Good old Calendar</h2>
             </div>
-            <nav role="navigation">
-                <ul>
-                    <li id="nav_me"><a href="/">Me</a></li>
-                    <li id="nav_apps" class="selected"><a href="/apps/">Apps</a></li>
-                    <li id="nav_out"><span>&nbsp;</span></li>
-                </ul>
-            </nav>
-        </header>
+            <p class="desc">A year-at-a-glance calendar with tap-to-mark days and home screen widgets.</p>
+            <div class="flex gap-2">
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">macOS 11+</span>
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50"> + Intel</span>
+            </div>
+          </a>
 
-        <main role="main" id="apps">
-            <section id="big_apps" class="panels">
-                <div id="create" class="group">
-                    <h2>Apps for productivity</h2>
-                    <div class="container">
-                        <div class="panel">
-                            <a href="/gocalendar/support/">
-                            <div class="header">
-                                <img class="banner" src="/images/gocalendar/gocalendar_adv.jpg">
-                                <div class="icon_container">
-                                    <img class="icon" src="/images/gocalendar/gocalendar.png">
-                                </div>
-                            </div>
-                            <div class="body">
-                                <p class="title">Good Old Calendar</p>
-                                <p class="description">Calendar that designed to provide a straightforward and user-friendly experience.</p>
-                            </div>
-                            <div class="footer">
-                                <p class="availability">Mac<!-- • iPhone • Apple Watch--></p>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="panel">
-                            <a href="/keyclu/support/">
-                            <div class="header">
-                                <img class="banner" src="/images/keyclu/keyclu_adv.jpg">
-                                <div class="icon_container">
-                                    <img class="icon" src="/images/keyclu/keyclu.png">
-                                </div>
-                            </div>
-                            <div class="body">
-                                <p class="title">KeyClu</p>
-                                <p class="description">Simple and handy overview of all shortcuts for any application.</p>
-                            </div>
-                            <div class="footer">
-                                <p class="availability">Mac</p>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <a href="/apps/keyclu/" class="app-card group block hover:bg-zinc-900/70 transition" data-category="productivity">
+            <div class="header-row">
+              <div class="w-24 h-24 flex items-center justify-center">
+                <img src="/images/keyclu/keyclu.png" alt="KeyClu icon">
+              </div>
+              <h2 class="group-hover:text-white transition">KeyClu</h2>
+            </div>
+            <p class="desc">A macOS shortcut overlay that shows every hotkey for the app you're using, on demand.</p>
+            <div class="flex gap-2">
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">macOS 11+</span>
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50"> + Intel</span>
+            </div>
+          </a>
 
-                <div id="entertain" class="group">
-                    <h2>Apps that entertain</h2>
-                    <div class="container">
-                        <div class="panel">
-                            <a href="/notchpet/support/">
-                            <div class="header">
-                                <img class="banner" src="/images/notchpet/notchpet_adv.jpg">
-                                <div class="icon_container">
-                                    <img class="icon" src="/images/notchpet/notchpet.png">
-                                </div>
-                            </div>
-                            <div class="body">
-                                <p class="title">Notch Pet</p>
-                                <p class="description">There is a cat living near to your notch. Does not do anything, like any cat.</p>
-                            </div>
-                            <div class="footer">
-                                <p class="availability">Mac</p>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+          <a href="/apps/notchpet/" class="app-card group block hover:bg-zinc-900/70 transition" data-category="entertainment">
+            <div class="header-row">
+              <div class="w-24 h-24 flex items-center justify-center">
+                <img class="" src="/images/notchpet/notchpet.png">
+              </div>
+              <h2 class="group-hover:text-white transition">Notch Pet</h2>
+            </div>
+            <p class="desc">A tiny animated companion that lives near your MacBook's notch, just because.</p>
+            <div class="flex gap-2">
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">macOS 12+</span>
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50"> + Intel</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-        <footer role="contentinfo" class="ifooter">
-            <p id="copyright">
-                Copyright © 2007-2026 Sergii Tatarenkov
-            </p>
-        </footer>
-    </body>
+  <footer class="mt-auto border-t border-zinc-900 px-6 md:px-12 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+      <span>Copyright &copy; 2007-2026 Sergii Tatarenkov</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/Anze" class="hover:text-zinc-300 transition">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
 </html>

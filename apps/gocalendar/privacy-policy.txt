@@ -1,0 +1,17 @@
+Application
+Good Old Calendar, also referred to as GOCalendar in the Application (the Application), is an application for productivity purposes. All rights to the Application belong to its developer, Sergii Tatarenkov (the Developer).
+
+License Terms
+You may use the Application for any private or business purpose, according to the license agreement provided by the application store where the Application was purchased.
+
+User Data
+The Application does not store or process user data. The Application does not send user data to anyone else.
+
+Privacy
+The Application does not collect any personal information and does not transfer any personal information to any third party.
+
+Warranty
+The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.
+
+Contact Us
+If you have any questions or suggestions, please contact the Developer: sms@tatarenkov.name

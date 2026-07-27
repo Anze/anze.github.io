@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Language" content="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sergii Tatarenkov · Software Developer &amp; Infrastructure Engineer</title>
+  <meta name="description" content="Software developer and infrastructure engineer building native macOS apps and open source Kubernetes tooling." />
 
-        <meta name="description" content="Sergii Tatarenkov">
-        <meta name="keywords" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Sergii Tatarenkov" />
+  <meta property="og:description" content="Native macOS apps and open source infrastructure tooling for Kubernetes." />
+  <meta property="og:type" content="website" />
 
-        <title>Anze&#039;s Laboratory</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-        <link href="/css/reset.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/shared.css?5" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/style.css?6" media="screen" rel="stylesheet" type="text/css">
-        <link href="/css/pap8gno.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sergii Tatarenkov","url":"https://sergii.tatarenkov.name","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/me.png","width":"512","height":"512"},"sameAs":["https://sergii.tatarenkov.name"]}</script>
+</head>
 
-        <link rel="icon" href="/favicon.ico" sizes="any">
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<body class="min-h-screen max-w-5xl mx-auto flex flex-col text-zinc-100">
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-path"><span class="seg">~</span></div>
+      <nav class="nav-links">
+        <a href="#" class="active">me</a>
+        <a href="/apps/" class="">apps</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- Hero -->
+  <main class="flex-1 px-6 md:px-12 pt-16 pb-8">
+    <section class="hero wrap pb-5">
+      <p class="prompt">whoami<span class="cursor"></span></p>
+      <h1>Sergii Tatarenkov</h1>
+      <p class="ledefix">Software developer.</p>
+      <p class="noledesmall">I build small, focused apps that respect your privacy - no bloat, no accounts, no nonsense.</p>
+      <p class="ledefix">Infrastructure Engineer.</p>
+      <p class="noledebig">Resilient Kubernetes platforms engineered for reliability and performance.</p>
+      <p class="noledebig">Precision across the stack - from the interfaces users interact with to the infrastructure they never see.</p>
+      <div class="cta-row">
+        <div class="flex flex-wrap gap-3">
+          <a href="/apps/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-800 text-sm font-medium text-zinc-200 hover:bg-zinc-900 transition">
+            See the apps →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <link rel="manifest" href="/site.webmanifest">
-    </head>
-    <body>
-        <header role="banner">
-            <div id="logo">
-                <a href="/">Anze&#039;s Laboratory</a>
-            </div>
-            <nav role="navigation">
-                <ul>
-                    <li id="nav_me" class="selected"><a href="/">Me</a></li>
-                    <li id="nav_apps"><a href="/apps/">Apps</a></li>
-                    <li id="nav_out"><span>&nbsp;</span></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main role="main">
-            <section id="app-intro">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="icon">
-                        <img src="/favicon.svg" class="ficon">
-                    </div>
-                    <div class="title">
-                        <h1>Sergii Tatarenkov</h1>
-                        <h2>making the world better</h2>
-                    </div>
-                </div>
-            </section>
-            <div id="description">
-                <h2>There is an engineer behind the systems.<br/>Turning ideas into something that just works.</h2>
-            </div>
-        </main>
-        <footer role="contentinfo" class="ifooter">
-            <p id="copyright">
-                Copyright © 2007-2026 Sergii Tatarenkov
-            </p>
-        </footer>
-    </body>
+  <footer class="mt-auto border-t border-zinc-900 px-6 md:px-12 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+      <span>Copyright &copy; 2007-2026 Sergii Tatarenkov</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/Anze" class="hover:text-zinc-300 transition">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
 </html>

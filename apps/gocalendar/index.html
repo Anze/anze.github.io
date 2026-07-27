@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Good Old Calendar · Sergii Tatarenkov</title>
+  <meta name="description" content="Experience the simplicity and convenience of a calendar with marks and widgets.">
+  <meta name="keywords" content="GOCalendar, Good, Old, Calendar, Календарь, Календар, Kalender, macOS, widget">
+
+  <link rel="icon" type="image/png" sizes="256x256" href="/images/favicons/256/gocalendar.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/128/gocalendar.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/32/gocalendar.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/16/gocalendar.png" />
+
+  <meta property="og:title" content="Good Old Calendar" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Experience the simplicity and convenience of a calendar with marks and widgets." />
+  <meta property="og:image" content="https://sergii.tatarenkov.name/images/gocalendar/gocalendar.png" />
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Good Old Calendar","alternateName":"GoCalendar","url":"https://sergii.tatarenkov.name/apps/gocalendar/","operatingSystem":"macOS 11+","applicationCategory":"ProductivityApplication","description":"Good Old Calendar (GoCalendar) is a simple, straightforward macOS calendar app offering a full year overview, quick day-marking with tap and long-press gestures, JSON export/import for data portability, and home-screen widgets for at-a-glance month tracking. Marked days are color-coded — tap for blue, double-tap for green, long-press for yellow — and the app calculates a yearly tally for each marking type (e.g. blue: 32/365 days).","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/gocalendar/gocalendar.png","width":"512","height":"512"},"author":{"@type":"Person","name":"Sergii Tatarenkov","url":"https://sergii.tatarenkov.name","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/me.png","width":"512","height":"512"},"sameAs":["https://sergii.tatarenkov.name"]},"license":"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/","sameAs":"https://apps.apple.com/app/good-old-calendar/id1600376286","downloadUrl":"https://apps.apple.com/app/good-old-calendar/id1600376286","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/good-old-calendar/id1600376286"},"featureList":["Full year overview with quick month navigation","Tap, double-tap, and long-press day marking with color-coded categories (blue, green, yellow)","Yearly tally of marked days per color (e.g. blue: 32/365)","Copy and paste dates or events between months or years using ⌘C / ⌘V","JSON export and import for data backup and portability","Home screen widgets showing complete month overview","Clean, intuitive interface for planning and tracking dates"],"softwareRequirements":"macOS 11 or later, Intel or Apple Silicon Mac","softwareHelp":{"@type":"CreativeWork","@id":"https://sergii.tatarenkov.name/apps/gocalendar/support/","name":"Good Old Calendar Support"}}</script>
+</head>
+
+<body class="min-h-screen max-w-5xl mx-auto flex flex-col text-zinc-100">
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-path"><span class="seg">~</span><span class="sep">/</span><span class="seg">apps</span><span class="sep">/</span><span class="seg">gocalendar</span></div>
+      <nav class="nav-links">
+        <a href="/">me</a>
+        <a href="/apps/" class="active">apps</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-1 px-6 md:px-12 pt-16 pb-8">
+    <section class="hero wrap pb-5">
+      <p class="prompt">cat apps/gocalendar<span class="cursor"></span></p>
+    </section>
+
+    <section class="wrap app-hero">
+      <img class="icon-lg icon-lg1" src="/images/gocalendar/gocalendar.png">
+      <div class="pt-6">
+        <h1>Good Old Calendar</h1>
+        <p class="tagline">with marks &amp; widgets</p>
+        <div class="meta-row">
+          <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">macOS 11+</span>
+          <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50"> + Intel</span>
+        </div>
+        <div class="cta-row pt-8 flex flex-wrap gap-3">
+          <a href="https://geo.itunes.apple.com/app/good-old-calendar/id1600376286?mt=12" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-500 text-sm font-medium text-zinc-200 hover:bg-zinc-800 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16.36 1.43c.1 1-.28 1.98-.9 2.7-.63.73-1.6 1.28-2.58 1.2-.12-.98.33-2 .93-2.66.66-.73 1.75-1.27 2.55-1.24zM20.9 17.24c-.36.83-.53 1.2-1 1.93-.65 1.02-1.57 2.3-2.7 2.31-1 .01-1.26-.65-2.62-.64-1.36 0-1.65.65-2.65.64-1.13-.01-2-.16-2.62-2.98-1.97-2.8-2.16-6.1-.7-8.2.85-1.24 2.3-1.98 3.62-1.99.98 0 1.9.66 2.5.66.6 0 1.7-.82 2.87-.7.49.02 1.87.2 2.75 1.5-.07.04-1.64.96-1.62 2.85.02 2.26 1.98 3.01 2 3.02-.02.06-.31 1.08-1.03 2.13z"/>
+            </svg>
+            Download for macOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>What it does</h2>
+        <p>Effortlessly navigate between months, switch views, and manage your calendar with simplicity.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p>Experience the simplicity and convenience!</p>
+      </div>
+      <div class="gc-feature-grid">
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
+          <h4>Year Overview at a Glance</h4>
+          <p>Quickly navigate through months and plan ahead with ease.</p>
+        </div>
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16"/><circle cx="9" cy="15" r="1.4" fill="currentColor" stroke="none"/><circle cx="15" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+          <h4>Easy Day Marking</h4>
+          <p>Tap once, twice, or long-press to add different types of markings.</p>
+        </div>
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="8" rx="1.5"/><rect x="13" y="4" width="8" height="5" rx="1.5"/><rect x="13" y="11" width="8" height="9" rx="1.5"/><rect x="3" y="14" width="8" height="6" rx="1.5"/></svg></div>
+          <h4>Convenient Widgets</h4>
+          <p>Stay organized and track important dates without opening the app.</p>
+        </div>
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 10l-3 2 3 2M16 10l3 2-3 2"/></svg></div>
+          <h4>Intuitive Interface</h4>
+          <p>Navigate between months, switch views, and manage your calendar with simplicity.</p>
+        </div>
+        <div class="gc-feature-card">
+           <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="2" y="3" width="9" height="9" rx="1.5"></rect><path d="M5 6.5h3M5 9h3"></path><rect x="13" y="12" width="9" height="9" rx="1.5"></rect><path d="M16 15.5h3M16 18h3"></path><path d="M11 6Q17 3 20 11" stroke-linecap="round"></path><path d="M17.3 8.8l2.7 1.6-.4-3.1" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+           <h4>Copy &amp; Paste</h4>
+          <p>Copy a month's or year's marks and paste them onto another month or year.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>Highlights</h2>
+        <p>Few more things.</p>
+      </div>
+      <div class="gc-highlight-grid">
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M15 3v18"/></svg></div>
+          <p>Get a comprehensive view of the entire year with the intuitive year overview feature.</p>
+        </div>
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <p>Whether you're planning events, tracking important dates, or just staying organized, this app has you covered.</p>
+        </div>
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><path d="M4 17s3-1 8-1 8 1 8 1M4 12s3-1 8-1 8 1 8 1M4 7s3-1 8-1 8 1 8 1"/></svg></div>
+          <p>Features a clean and intuitive interface that ensures a seamless user experience.</p>
+        </div>
+        <div class="gc-feature-card">
+          <div class="gc-ico-wrap"><svg class="gc-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><rect x="6" y="7" width="6" height="6" rx="1"/><path d="M15 7h3M15 10h3M6 16h12"/></svg></div>
+          <p>Access a complete month overview right from your device's home screen with handy widgets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BY DESIGN -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>Kept Simple, On Purpose</h2>
+        <p>A few things Good Old Calendar deliberately leaves out.</p>
+      </div>
+      <ul class="gc-limits">
+        <li>Marks days, not times — there's no time-of-day scheduling within a day</li>
+        <li>No text or notes per event; each marking type carries its own meaning globally, rather than per month or per event</li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section class="wrap pt-10">
+      <div class="app-cta">
+        <h3>Try Good Old Calendar</h3>
+        <p>A free download on the Mac App Store.</p>
+        <a href="https://geo.itunes.apple.com/app/good-old-calendar/id1600376286?mt=12" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-zinc-300 text-sm font-medium text-zinc-900 hover:bg-white transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.36 1.43c.1 1-.28 1.98-.9 2.7-.63.73-1.6 1.28-2.58 1.2-.12-.98.33-2 .93-2.66.66-.73 1.75-1.27 2.55-1.24zM20.9 17.24c-.36.83-.53 1.2-1 1.93-.65 1.02-1.57 2.3-2.7 2.31-1 .01-1.26-.65-2.62-.64-1.36 0-1.65.65-2.65.64-1.13-.01-2-.16-2.62-2.98-1.97-2.8-2.16-6.1-.7-8.2.85-1.24 2.3-1.98 3.62-1.99.98 0 1.9.66 2.5.66.6 0 1.7-.82 2.87-.7.49.02 1.87.2 2.75 1.5-.07.04-1.64.96-1.62 2.85.02 2.26 1.98 3.01 2 3.02-.02.06-.31 1.08-1.03 2.13z"/>
+          </svg>
+          Download for macOS
+        </a>
+      </div>
+    </section>
+
+    <!-- LEGAL -->
+    <section class="wrap pt-10" id="legal">
+      <div class="section-head">
+        <h2>Legal</h2>
+        <p class="lede">
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener" class="underline forward">License</a>
+          ·
+          <a href="/apps/gocalendar/privacy-policy.txt" target="_blank" rel="noopener" class="underline forward">Privacy Policy</a>
+          ·
+          <a href="/apps/gocalendar/support/" class="underline forward">Support</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- REQUIREMENTS -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>Requirements</h2>
+        <p class="lede">macOS 11 Big Sur or later. Apple Silicon and Intel supported.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-auto border-t border-zinc-900 px-6 md:px-12 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+      <span>Copyright &copy; 2007-2026 Sergii Tatarenkov</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/Anze" class="hover:text-zinc-300 transition">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

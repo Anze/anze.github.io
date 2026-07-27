@@ -1,0 +1,101 @@
+export default {
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/apps/keyclu/brew-downloads.svg") {
+      const cache = caches.default;
+      const cacheKey = new Request(url.toString(), request);
+
+      // 1 day cache
+      const cached = await cache.match(cacheKey);
+      if (cached) { return cached; }
+
+      const apiUrl = "https://formulae.brew.sh/api/cask/keyclu.json";
+
+      const res = await fetch(apiUrl, {
+        headers: {
+          "User-Agent": "cloudflare-worker",
+          "Accept": "application/json"
+        }
+      });
+
+      let yearInstalls = 0;
+
+      if (!res.ok) {
+        return new Response("Failed to fetch Homebrew data", {
+          status: 500,
+        });
+      } else {
+        const json = await res.json();
+        yearInstalls = json.analytics?.install?.["365d"]?.keyclu ?? 0;
+      }
+
+      const svg = badge(
+        "brew installs",
+        formatNumber(yearInstalls),
+        "#4c1"
+      );
+
+      const response = new Response(svg, {
+        headers: {
+          "Content-Type": "image/svg+xml",
+          "Cache-Control": "public, max-age=86400, s-maxage=86400"
+        }
+      });
+
+      ctx.waitUntil(cache.put(cacheKey, response.clone()));
+      return response;
+    }
+
+    return new Response("Not found", { status: 404 });
+  }
+}
+
+function formatNumber(num) {
+  if (num >= 1_000_000) return (num / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 10_000) return (num / 10_000).toFixed(1).replace(/\.0$/, "") + "K";
+  return String(num);
+}
+
+function badge(label, message, color) {
+  const labelWidth = Math.max(70, label.length * 6.3);
+  const valueWidth = Math.max(40, String(message).length * 7);
+  const labelWidthM = 10 * labelWidth / 2;
+  const valueWidthM = 10 * labelWidth + 10 * valueWidth / 2;
+  const total = labelWidth + valueWidth;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${total}" height="20" role="img">
+  <title>${label}: ${message}</title>
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="16"/>
+  </filter>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="${total}" height="20" rx="3"/>
+  </clipPath>
+  <g clip-path="url(#r)">
+    <rect width="${labelWidth}" height="20" fill="#555"/>
+    <rect x="${labelWidth}" width="${total}" height="20" fill="${color}"/>
+    <rect width="${total}" height="20" fill="url(#s)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <g transform="scale(.1)">
+      <g aria-hidden="true" fill="#010101">
+        <text x="${labelWidthM} " y="150" filter="url(#blur)" fill-opacity=".8">${label}</text>
+        <text x="${labelWidthM}" y="150" fill-opacity=".3">${label}</text>
+      </g>
+      <text x="${labelWidthM}" y="140">${label}</text>
+    </g>
+    <g transform="scale(.1)">
+      <g aria-hidden="true" fill="#010101">
+        <text x="${valueWidthM}" y="150" filter="url(#blur)" fill-opacity=".8">${message}</text>
+        <text x="${valueWidthM}" y="150" fill-opacity=".3">${message}</text>
+      </g>
+      <text x="${10 * labelWidth + 10 * valueWidth / 2}" y="140">${message}</text>
+    </g>
+  </g>
+</svg>`;
+}
