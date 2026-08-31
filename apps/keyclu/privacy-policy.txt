@@ -1,14 +1,27 @@
+Privacy Policy for KeyClu
+
+Effective Date: August 31, 2026
+
 Application
 KeyClu (the Application) is an application for productivity purposes. All rights to the Application belong to its developer, Sergii Tatarenkov (the Developer).
 
 License Terms
-KeyClu is released under the BSD-3-Clause-Clear license. See LICENSE.txt for details.
+KeyClu is released under the BSD-3-Clause-Clear license. See https://sergii.tatarenkov.name/apps/keyclu/license.txt for details.
 
 User Data
-The Application stores local usage data on your device — specifically, a count of how many times each shortcut is selected by clicking rather than typing. This data is used only to improve the Application's local behavior (for example, prioritizing shortcuts you use most) and is never sent anywhere. The database file is stored openly on your device and can be freely read, edited, or deleted by you at any time.
+The Application stores local usage data on your device - specifically, a count of how many times each shortcut is selected by clicking rather than typing. This count stays on your device and is never sent anywhere. The database file is stored openly on your device and can be freely read, edited, or deleted by you at any time.
+
+Permissions
+The Application requests Accessibility access. This permission is required, because macOS only allows an application to read another application's menu items with it. The Application uses it to read the menu titles and their keyboard shortcuts of the application currently in focus, and to import and export shortcut data. It is never used to observe what you type, to read the contents of your documents or screen, or to control other applications. Nothing read through this permission is transmitted anywhere.
+The Application may also request Notification Center access. This permission is optional and is used only to inform you about updates, imports, and exports. Declining it does not affect anything else in the Application.
+You may revoke either permission at any time in System Settings, Privacy & Security.
 
 Privacy
-The Application does not collect any personal information. All usage data described above stays on your device and is never transmitted anywhere — not to the Developer, not to any third party, not to any server.
+The Application does not collect any personal information. All usage data described above stays on your device and is never transmitted anywhere - not to the Developer, not to any third party, not to any server.
+The Application makes no network connections except to check whether a newer version is available, and, when that is enabled too, to download it. Both the check and the download are optional and off unless you turn them on, the Application works fully without either, and neither sends any personal information or usage data.
+
+Changes to This Policy
+This file may be updated from time to time. Any changes will be committed directly to this repository and reflected in the updated Effective Date at the top of the file.
 
 Warranty
 The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.

@@ -3,26 +3,22 @@
     <channel>
         <title>KeyClu</title>
         <item>
-            <title>0.32</title>
-            <pubDate>Fri, 17 Jul 2026 23:01:37 +0200</pubDate>
-            <sparkle:version>30147</sparkle:version>
-            <sparkle:shortVersionString>0.32</sparkle:shortVersionString>
+            <title>0.33</title>
+            <pubDate>Mon, 31 Aug 2026 14:18:14 +0200</pubDate>
+            <sparkle:version>30231</sparkle:version>
+            <sparkle:shortVersionString>0.33</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>11.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <style>ul{list-style-type:none;padding:0;margin:0;}li{display:flex;align-items:center;margin:1px;}li::before{content:attr(class);text-transform:uppercase;display:inline-block;padding:2px 3px 1px 3px;margin-right:5px;border-radius:3px;color:white;font-size:0.48rem;font-weight:bold;}li.new::before{background-color: #2196f3;}li.fix::before{background-color: #f44336;}li.upd::before{background-color: #9829bd;}</style>
                 <ul>
-                    <li class="fix">fixed small UI issues</li>
-                    <li class="fix">fixed typos #151</li>
-                    <li class="fix">fixed toggle-panel failed to display My Shortcuts #141</li>
-                    <li class="new">added possibility to display  menu items (Settings → Appearance → Visibility)</li>
-                    <li class="new">added possibility to limit activation hotkey to sides: left, right, either (Settings → General → Activation)</li>
-                    <li class="new">added support for multiple languages #119 #153</li>
-                    <li class="new">added possibility to display macOS gestures #140</li>
-                    <li class="new">added Jitouch integration to display gestures</li>
+                    <li class="fix">fixed database access prompt on launch on macOS 15+ (will still appear one last time)</li>
+                    <li class="upd">improved performance</li>
+                    <li class="upd">improved UI to be on pair for macOS versions</li>
+                    <li class="new">added Japanese localization #157</li>
                 </ul>
                 ]]>
             </description>
-            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.32/KeyClu_v0.32.dmg" length="6537155" type="application/octet-stream" sparkle:edSignature="eXg6AJmiBZDqhVHx3ZgIa1xmTI8QKfPbxltriP+Jq7fZBfS/ltGp1al6F1IV/2dQwxGWJbbc5Lsu76hREJ21CA=="/>
+            <enclosure url="https://github.com/Anze/KeyCluCask/releases/download/v0.33/KeyClu_v0.33.dmg" length="6012653" type="application/octet-stream" sparkle:edSignature="MMML/2qRKHC6bPwtzBlVlnlJKukRCE48+YFkjua7jAeOd3gaJbNPaqDvgTf/hSvZHQhs0FmuvT3jtMhudVjjAw=="/>
         </item>
     </channel>
 </rss>
