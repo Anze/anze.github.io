@@ -31,7 +31,8 @@
 
   function applyFilter(cat){
     cards.forEach(card => {
-      const match = cat === 'all' || card.dataset.category === cat;
+      const cats = (card.dataset.category || '').trim().split(/\s+/);
+      const match = cat === 'all' || cats.includes(cat);
       card.classList.toggle('hidden', !match);
     });
     flags.forEach(f => f.classList.toggle('active', f.dataset.cat === cat));
