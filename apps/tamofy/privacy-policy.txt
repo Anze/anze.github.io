@@ -1,0 +1,23 @@
+Application
+Tamofy (the Application) is an application for marking up screenshots and other images. All rights to the Application belong to its developer, Sergii Tatarenkov (the Developer).
+
+License Terms
+You may use the Application for any private or business purpose, according to the license agreement provided by the application store where the Application was obtained.
+
+User Data
+The Application works only with the images and documents you hand to it - files you open, drop onto it, or place on the clipboard. Those files, and any documents you save in the Application's own .tamofy format, are stored locally on your Mac in the locations you choose. The Application does not require an account, does not use cloud sync, and does not send your images, documents, or any other user data to the Developer or to anyone else.
+
+Permissions
+The Application is sandboxed and requests no special system permissions. It has access to the files you open and to your Pictures folder, which is where exported images are placed. It does not request Screen Recording, camera, microphone, contacts, calendar, or location access, and it does not capture your screen.
+
+Network
+The Application has no network access. Incoming and outgoing connections are both disabled.
+
+Privacy
+The Application does not collect any personal information and does not transfer any personal information to any third party. Nothing is collected, and nothing is sent anywhere.
+
+Warranty
+The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.
+
+Contact Us
+If you have any questions or suggestions, please contact the Developer: sms@tatarenkov.name

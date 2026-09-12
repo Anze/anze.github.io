@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tamofy · Sergii Tatarenkov</title>
+  <meta name="description" content="A Mac app for marking up screenshots - arrows that look like arrows, text you can read on any picture, and a fast way back out. No screen recording, no network access." />
+  <meta name="keywords" content="Tamofy, screenshot annotation, annotate, markup, arrows, callouts, numbered steps, magnifier, loupe, highlight, pixelate, redact, crop, Skitch alternative, macOS, Screenshot beschriften, annotation d'image, 截图标注, スクリーンショット注釈, аннотации, анотації" />
+
+  <link rel="icon" type="image/png" sizes="256x256" href="/images/favicons/256/tamofy.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/128/tamofy.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/32/tamofy.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/16/tamofy.png" />
+
+  <meta property="og:title" content="Tamofy" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="A Mac app for marking up screenshots - arrows that look like arrows, text you can read on any picture, and a fast way back out. No screen recording, no network access." />
+  <meta property="og:image" content="https://sergii.tatarenkov.name/images/tamofy/tamofy.png" />
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tamofy","url":"https://sergii.tatarenkov.name/apps/tamofy/","operatingSystem":"macOS 26+","applicationCategory":"DesignApplication","applicationSubCategory":"ProductivityApplication","inLanguage":["en","de","zh-Hans","ja"],"description":"Tamofy marks up screenshots on macOS. Drop a picture in, point at what matters, and send it - arrows, captions, shapes, highlights, numbered steps, a magnifier for detail too small to read, and pixelation for what should not be shared. Drag the result straight into your message, or save a .tamofy document and move the marks again tomorrow. Tamofy does not take screenshots, asks for no Screen Recording permission, and has no network access.","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/tamofy/tamofy.png","width":"512","height":"512"},"author":{"@type":"Person","name":"Sergii Tatarenkov","url":"https://sergii.tatarenkov.name","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/me.png","width":"512","height":"512"},"sameAs":["https://sergii.tatarenkov.name"]},"license":"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/","sameAs":"https://apps.apple.com/app/tamofy/id0000000000","downloadUrl":"https://apps.apple.com/app/tamofy/id0000000000","installUrl":"https://apps.apple.com/app/tamofy/id0000000000","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/tamofy/id0000000000"},"featureList":["Arrow with a middle handle that bends it, while the head keeps its shape","Text with an outline that stays readable on any picture","Shapes - box, square box, ellipse, line","Freehand draw","Highlight as a marker stroke or a straight band","Numbered pins that fill the lowest number not in use","Magnifier loupe - a small circle on the detail, a larger one showing it","Pixelate for what should not be shared","Crop","One key per tool, no modifiers or chords","Stroke weight adjustable on the fly with the [ and ] keys","Control to constrain, Option to drag out a copy, Command to grab a mark while a pen is in hand","Drag the finished picture straight into a message, document or folder","Shift-Command-C puts a PNG on the clipboard; Command-E exports a PNG to Pictures","Command-S saves a .tamofy document that reopens with every mark still movable","Shift-Command-T reopens the last closed window with picture, marks, position and zoom intact, and survives quitting","Control-Shift-A makes a window from the clipboard and Control-Shift-T a blank canvas, from anywhere","Undo everything, including crop and pixelation, until you deliberately flatten it","English, German, Simplified Chinese and Japanese, switchable inside the app","No network access, no Screen Recording, camera, microphone, contacts, calendar or location"],"softwareRequirements":"macOS 26 or later","permissions":"None. Sandboxed, with access to the files you open and to your Pictures folder. No Screen Recording, camera, microphone, contacts, calendar or location, and no network access.","softwareHelp":{"@type":"CreativeWork","@id":"https://sergii.tatarenkov.name/apps/tamofy/support/","name":"Tamofy Support"}}</script>
+</head>
+
+<body class="min-h-screen max-w-5xl mx-auto flex flex-col text-zinc-100">
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-path"><span class="seg">~</span><span class="sep">/</span><span class="seg">apps</span><span class="sep">/</span><span class="seg">tamofy</span></div>
+      <nav class="nav-links">
+        <a href="/">me</a>
+        <a href="/apps/" class="active">apps</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-1 px-6 md:px-12 pt-16 pb-8">
+    <!-- ========================================== -->
+    <!-- SECTION: HERO PROMPT                       -->
+    <!-- ========================================== -->
+    <section class="hero wrap pb-5">
+      <p class="prompt">cat apps/tamofy<span class="cursor"></span></p>
+    </section>
+    <!-- END SECTION: HERO PROMPT                   -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: APP HERO                          -->
+    <!-- ========================================== -->
+    <section class="wrap app-hero">
+      <img class="icon-lg icon-lg4" src="/images/tamofy/tamofy.png" alt="Tamofy app icon" width="512" height="512" />
+      <div class="pt-6">
+        <h1>Tamofy</h1>
+        <p class="tagline">point it out</p>
+        <div class="meta-row">
+          <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">macOS 26+</span>
+          <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">Apple Silicon + Intel</span>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-900/30 text-xs text-emerald-300 border border-emerald-800/50">Free</span>
+        </div>
+        <div class="cta-row pt-8 flex flex-wrap gap-3">
+          <a href="https://geo.itunes.apple.com/app/tamofy/id6804068533?mt=12" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-500 text-sm font-medium text-zinc-200 hover:bg-zinc-800 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12"/><path d="M7 13l5 5 5-5"/><path d="M5 20h14"/></svg>
+            Download for macOS
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: APP HERO                      -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: WHAT IT DOES                      -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>What it does</h2>
+        <p>Tamofy makes it fast to mark up screenshots and images - with arrows, readable text, highlights, drawings, counters, magnification, and pixelation.</p>
+        <p>macOS already does screenshots well. What it doesn't do is give you a quick way to explain what's in one. That's where Tamofy comes in.</p>
+      </div>
+    </section>
+    <!-- END SECTION: WHAT IT DOES                  -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: GETTING A PICTURE IN              -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="opening">
+      <div class="section-head">
+        <h2>Getting a picture in</h2>
+        <p>Four ways, and none of them involve leaving what you were doing.</p>
+      </div>
+      <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Drop a file on a window</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Drop a file on the menu bar icon</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Open a file, or Open With from Finder</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Paste whatever is on the clipboard</li>
+      </ul>
+      <p class="mt-4 text-sm text-zinc-500">Capture a region with macOS's own screenshot shortcut, then bring it into a new window from anywhere - Tamofy doesn't need to be in front.</p>
+    </section>
+    <!-- END SECTION: GETTING A PICTURE IN          -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: MARKING IT                        -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="tools">
+      <div class="section-head">
+        <h2>Marking it</h2>
+        <p>Every tool is one key. No modifiers, no chords.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>Arrow <span class="font-mono text-zinc-500">(A)</span></h4>
+          <p>Point at what matters. Bend it around anything in the way.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Text <span class="font-mono text-zinc-500">(T)</span></h4>
+          <p>Say it in words. Readable on any picture, at any angle.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Shape <span class="font-mono text-zinc-500">(S)</span></h4>
+          <p>Box it, circle it, underline it. One key, four shapes - press again to cycle.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Draw <span class="font-mono text-zinc-500">(D)</span></h4>
+          <p>Freehand, for what a shape won't say.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Highlight <span class="font-mono text-zinc-500">(H)</span></h4>
+          <p>Make one line jump off the page. Marker stroke or straight band.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Number <span class="font-mono text-zinc-500">(N)</span></h4>
+          <p>Turn a screenshot into steps. Drop pins 1, 2, 3 as you go.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Magnifier <span class="font-mono text-zinc-500">(M)</span></h4>
+          <p>Show the detail without cropping the picture. Small differences become obvious.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Pixelate <span class="font-mono text-zinc-500">(P)</span></h4>
+          <p>Blur what shouldn't leave the room - names, tokens, whole conversations.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Crop <span class="font-mono text-zinc-500">(C)</span></h4>
+          <p>Cut to the point. Everything else stops competing for attention.</p>
+        </div>
+      </div>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <h3 class="text-base font-semibold text-zinc-100">Constrain <span class="font-mono font-normal text-zinc-500">(&#8963;)</span></h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Angles snap, boxes square up, and a move locks to one axis.</p>
+        </div>
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <h3 class="text-base font-semibold text-zinc-100">Copy while dragging <span class="font-mono font-normal text-zinc-500">(&#8997;)</span></h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Drag out a duplicate and leave the original where it is.</p>
+        </div>
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <h3 class="text-base font-semibold text-zinc-100">Grab a mark <span class="font-mono font-normal text-zinc-500">(&#8984;)</span></h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Take hold of an existing mark while a pen is still in your hand.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: MARKING IT                    -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: GETTING IT OUT                    -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="export">
+      <div class="section-head">
+        <h2>Getting it out</h2>
+        <p>Send the PNG, keep the document.</p>
+      </div>
+      <div class="highlight-grid">
+        <div class="feature-card">
+          <h4>Drag it out</h4>
+          <p>Drag the picture straight out of the window into a message, a document, or a folder. Nothing is written until the other side takes it.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Clipboard</h4>
+          <p>A PNG on the clipboard, ready to paste wherever you were typing.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Export image</h4>
+          <p>A PNG in your Pictures folder. Export As&hellip; asks where instead.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Save document</h4>
+          <p>A <span class="font-mono">.tamofy</span> document, which reopens with every mark still selectable and movable - so the arrow you put in the wrong place is a drag away, not a redraw.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: GETTING IT OUT                -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: CLOSED BY MISTAKE                 -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="reopen">
+      <div class="section-head">
+        <h2>When you close it by mistake</h2>
+        <p>Closing a window isn't a decision you have to get right.</p>
+      </div>
+      <div class="mt-6 grid gap-4 sm:grid-cols-1">
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <h3 class="text-base font-semibold text-zinc-100">Bring back the last canvas</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Picture, marks, position and zoom intact - and it still knows the file it came from.</p>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: CLOSED BY MISTAKE             -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: LANGUAGES                         -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="languages">
+      <div class="section-head">
+        <h2>Languages</h2>
+        <p>English, German, Chinese and Japanese out of the box. Missing yours? <a href="mailto:sms@tatarenkov.name?subject=Tamofy%20translation" class="underline forward">Get in touch</a>.</p>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-2.5">
+        <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">English</span>
+        <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">Deutsch</span>
+        <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">中文</span>
+        <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">日本語</span>
+      </div>
+    </section>
+    <!-- END SECTION: LANGUAGES                     -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: CTA DOWNLOAD                      -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="download">
+      <div class="app-cta">
+        <h3>Try Tamofy</h3>
+        <p>A free download on the Mac App Store.</p>
+        <a href="https://geo.itunes.apple.com/app/tamofy/id6804068533?mt=12" target="_blank" rel="noopener" class="inline-block p-2.5">
+          <img src="/images/badges/download-mac-app-store.svg" alt="Download Tamofy on the Mac App Store" width="156" height="40" class="h-10 w-auto" />
+        </a>
+      </div>
+    </section>
+    <!-- END SECTION: CTA DOWNLOAD                  -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: REQUIREMENTS                      -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>Requirements</h2>
+        <p class="lede">macOS 26 or later. Apple Silicon and Intel supported.</p>
+      </div>
+    </section>
+    <!-- END SECTION: REQUIREMENTS                  -->
+
+    <!-- ========================================== -->
+    <!-- SECTION: LEGAL                             -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="legal">
+      <div class="section-head">
+        <h2>Legal</h2>
+        <p class="lede">
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener" class="underline forward">License</a>
+          &middot;
+          <a href="/apps/tamofy/privacy-policy.txt" target="_blank" rel="noopener" class="underline forward">Privacy Policy</a>
+          &middot;
+          <a href="/apps/tamofy/support/" class="underline forward">Support</a>
+        </p>
+      </div>
+    </section>
+    <!-- END SECTION: LEGAL                         -->
+  </main>
+
+  <footer class="mt-auto border-t border-zinc-900 px-6 md:px-12 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+      <span>Copyright &copy; 2007-2026 Sergii Tatarenkov</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/Anze" class="hover:text-zinc-300 transition">GitHub</a>
+      </div>
+    </div>
+    <p class="max-w-5xl mx-auto pt-6 text-xs text-zinc-600">Apple, the Apple logo, Mac, and Finder are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
