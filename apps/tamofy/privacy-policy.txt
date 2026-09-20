@@ -1,3 +1,7 @@
+Privacy Policy for Tamofy
+
+Effective Date: September 18, 2026
+
 Application
 Tamofy (the Application) is an application for marking up screenshots and other images. All rights to the Application belong to its developer, Sergii Tatarenkov (the Developer).
 
@@ -8,13 +12,16 @@ User Data
 The Application works only with the images and documents you hand to it - files you open, drop onto it, or place on the clipboard. Those files, and any documents you save in the Application's own .tamofy format, are stored locally on your Mac in the locations you choose. The Application does not require an account, does not use cloud sync, and does not send your images, documents, or any other user data to the Developer or to anyone else.
 
 Permissions
-The Application is sandboxed and requests no special system permissions. It has access to the files you open and to your Pictures folder, which is where exported images are placed. It does not request Screen Recording, camera, microphone, contacts, calendar, or location access, and it does not capture your screen.
+The Application requests no special system permissions. It has access to the files you open and to your Pictures folder. By default, documents and exported images are placed in ~/Pictures/Tamofy, and pictures you drag out of the Application are written to day folders under ~/Pictures/Tamofy/Drags, where they remain until you remove them.
 
 Network
-The Application has no network access. Incoming and outgoing connections are both disabled.
+The Application sends nothing about you anywhere. No analytics, no crash reports, no diagnostics, no user data - not to the Developer, and not to anyone else.
 
 Privacy
-The Application does not collect any personal information and does not transfer any personal information to any third party. Nothing is collected, and nothing is sent anywhere.
+The Application does not collect any personal information and does not transfer any personal information to any third party. There is no analytics, no crash reporting, no usage tracking, and no advertising. Nothing about you is collected, and nothing about you is sent anywhere.
+
+Changes to This Policy
+This file may be updated from time to time. Any changes will be reflected in the updated Effective Date at the top of the file.
 
 Warranty
 The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.

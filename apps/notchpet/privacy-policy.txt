@@ -11,8 +11,14 @@ You may use the Application for any private or business purpose, according to th
 User Data
 The Application does not store or process user data. The Application does not send user data to anyone else.
 
+Network
+The Application sends nothing about you anywhere. No analytics, no crash reports, no diagnostics, no user data - not to the Developer, and not to anyone else.
+
 Privacy
-The Application does not collect any personal information and does not transfer any personal information to any third party.
+The Application does not collect any personal information and does not transfer any personal information to any third party. There is no analytics, no crash reporting, no usage tracking, and no advertising. Nothing about you is collected, and nothing about you is sent anywhere.
+
+Changes to This Policy
+This file may be updated from time to time. Any changes will be reflected in the updated Effective Date at the top of the file.
 
 Warranty
 The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.
