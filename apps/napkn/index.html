@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Napkn · Sergii Tatarenkov</title>
+  <meta name="description" content="Hold a modifier. The note for the app you're in appears. Release it. Gone. Napkn is a per-app scratch surface for your Mac." />
+  <meta name="keywords" content="Napkn, notes, scratchpad, per-app notes, macOS, hotkey, quick note, notiz, заметки, нотатки" />
+
+  <link rel="icon" type="image/png" sizes="256x256" href="/images/favicons/256/napkn.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/images/favicons/128/napkn.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/32/napkn.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/16/napkn.png" />
+
+  <meta property="og:title" content="Napkn" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Hold a modifier. The note for the app you're in appears. Release it. Gone. Napkn is a per-app scratch surface for your Mac." />
+  <meta property="og:image" content="https://sergii.tatarenkov.name/images/napkn/napkn.png" />
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css?2" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Napkn","url":"https://sergii.tatarenkov.name/apps/napkn/","operatingSystem":"macOS 14+","applicationCategory":"ProductivityApplication","inLanguage":["en","de"],"description":"Napkn is a per-app scratch surface for macOS. Hold a modifier key to peek at the note belonging to the app you are currently using, or pin it as an active scratchpad. Notes are stored locally, require no account or cloud sync, and are excluded from screen sharing by default.","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/napkn/napkn.png","width":"512","height":"512"},"author":{"@type":"Person","name":"Sergii Tatarenkov","url":"https://sergii.tatarenkov.name","image":{"@type":"ImageObject","url":"https://sergii.tatarenkov.name/images/me.png","width":"512","height":"512"},"sameAs":["https://sergii.tatarenkov.name"]},"license":"https://www.apple.com/legal/internet-services/itunes/dev/stdeula/","sameAs":"https://apps.apple.com/app/napkn/id6720766341","downloadUrl":"https://apps.apple.com/app/napkn/id6720766341","installUrl":"https://apps.apple.com/app/napkn/id6720766341","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://apps.apple.com/app/napkn/id6720766341"},"featureList":["Per-app notes tied to the application you are currently using","Peek mode - hold a modifier key to view the current app's note","Pin mode - keep a note open as an active scratchpad while you work","Pinned notes stay associated with their app across app switches and restarts","Every keystroke saved automatically","Notes stored locally, no account and no cloud sync","Excluded from screen sharing, recordings and presentations by default"],"softwareRequirements":"macOS 14 or later, Intel or Apple Silicon Mac","permissions":"Input Monitoring - optional, needed only for peek notes; pinned notes work without any permission","softwareHelp":{"@type":"CreativeWork","@id":"https://sergii.tatarenkov.name/apps/napkn/support/","name":"Napkn Support"}}</script>
+</head>
+
+<body class="min-h-screen max-w-5xl mx-auto flex flex-col text-zinc-100">
+  <header class="site-nav">
+    <div class="nav-inner">
+      <div class="nav-path"><span class="seg">~</span><span class="sep">/</span><span class="seg">apps</span><span class="sep">/</span><span class="seg">napkn</span></div>
+      <nav class="nav-links">
+        <a href="/">me</a>
+        <a href="/apps/" class="active">apps</a>
+      </nav>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-1 px-6 md:px-12 pt-16 pb-8">
+    <section class="hero wrap pb-5">
+      <p class="prompt">cat apps/napkn<span class="cursor"></span></p>
+    </section>
+
+    <section class="wrap app-hero">
+      <img class="icon-lg icon-lg4" src="/images/napkn/napkn.png" alt="Napkn app icon" />
+      <div class="pt-6">
+        <h1>Napkn</h1>
+        <p class="tagline">per-app sticky notes</p>
+        <div class="meta-row">
+          <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">macOS 14+</span>
+          <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">Apple Silicon + Intel</span>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-900/30 text-xs text-emerald-300 border border-emerald-800/50">Free</span>
+        </div>
+        <div class="cta-row pt-8 flex flex-wrap gap-3">
+          <a href="https://geo.itunes.apple.com/app/napkn/id6720766341?mt=12" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-500 text-sm font-medium text-zinc-200 hover:bg-zinc-800 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12"/><path d="M7 13l5 5 5-5"/><path d="M5 20h14"/></svg>
+            Download for macOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT DOES -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>What it does</h2>
+        <p>Hold a modifier. The note for the app you're in appears. Release it. Gone.</p>
+        <p>A per-app scratch surface, always connected to the work you're doing.</p>
+        <p>No windows to manage, no notes to file, no context to choose.</p>
+      </div>
+    </section>
+
+    <!-- TWO MODES -->
+    <section class="wrap pt-10" id="modes">
+      <div class="section-head">
+        <h2>Two ways to use it</h2>
+        <p>Write where you work. Your note belongs to the app you're currently using.</p>
+      </div>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800/80 text-zinc-300">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="2.5"/></svg>
+          </div>
+          <h3 class="text-base font-semibold text-zinc-100">Peek</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Hold your modifier to see the note for the current app. It stays out of the way and disappears when you release.</p>
+        </div>
+
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800/80 text-zinc-300">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l-1 6 4 3v2H6v-2l4-3z"/><path d="M12 14v7"/></svg>
+          </div>
+          <h3 class="text-base font-semibold text-zinc-100">Pin</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Turn the note into an active scratchpad. Edit freely, and it stays available while you work. Close it with Escape, the close button, or the hotkey.</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-zinc-500">Pinned notes remain associated with their apps, even while you switch between other apps or restart Napkn.</p>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="wrap pt-10" id="features">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p>Built for fleeting thoughts - the things you need right now.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="ico-wrap"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18"/><path d="M7 12h7M7 16h4"/></svg></div>
+          <h4>Tied to the app</h4>
+          <p>Every app gets its own note. Switch apps and the note switches with you - no window hunting, no deciding where a note should live.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="ico-wrap"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg></div>
+          <h4>Hotkey or modifier</h4>
+          <p>Open with a hotkey, or peek by holding a modifier key. When you're done, let go.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="ico-wrap"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M8 3v5h7"/><path d="M8 15h8"/></svg></div>
+          <h4>Saved as you type</h4>
+          <p>Every keystroke is saved automatically, so a scratch note doesn't disappear just because you moved on.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="ico-wrap"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg></div>
+          <h4>Out of your way</h4>
+          <p>Napkn stays invisible until you need it. No windows, no filing, no cloud - just the note you need, where you need it.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="ico-wrap"><svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8"/><path d="M4 3l16 16"/></svg></div>
+          <h4>Hidden when sharing</h4>
+          <p>Excluded from screen sharing by default, so scratch notes stay out of presentations and recordings. Change it by tapping eye if you want them visible.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="ico-wrap"><svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h4>Private by Design</h4>
+          <p>No accounts, no tracking, no ads, nothing sent anywhere. Your notes are stored locally on your Mac.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>What people keep in it</h2>
+        <p>Things that matter for the next ten minutes, not the next ten years.</p>
+      </div>
+      <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Copy something before you forget it</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Jot down a command while coding</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Keep temporary details beside a Finder task</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Capture an idea without opening a full note app</li>
+        <li class="rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm text-zinc-400">Leave a reminder that belongs to the app you're using</li>
+      </ul>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION: LANGUAGES                         -->
+    <!-- ========================================== -->
+    <section class="wrap pt-10" id="languages">
+      <div class="section-head">
+        <h2>Languages</h2>
+        <p>English and German out of the box. Missing yours? <a href="mailto:sms@tatarenkov.name?subject=Napkn%20translation" class="underline forward">Get in touch</a>.</p>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-2.5">
+        <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">English</span>
+        <span class="px-2.5 py-1 rounded-full bg-zinc-800/80 text-xs text-zinc-300 border border-zinc-700/50">Deutsch</span>
+      </div>
+    </section>
+    <!-- END SECTION: LANGUAGES                     -->
+
+    <!-- CTA -->
+    <section class="wrap pt-10" id="download">
+      <div class="app-cta">
+        <h3>Try Napkn</h3>
+        <p>A free download on the Mac App Store.</p>
+        <a href="https://geo.itunes.apple.com/app/napkn/id6720766341?mt=12" target="_blank" rel="noopener" class="inline-block p-2.5">
+          <img src="/images/badges/download-mac-app-store.svg" alt="Download Napkn on the Mac App Store" width="156" height="40" class="h-10 w-auto" />
+        </a>
+      </div>
+    </section>
+
+    <!-- REQUIREMENTS -->
+    <section class="wrap pt-10">
+      <div class="section-head">
+        <h2>Requirements</h2>
+        <p class="lede">macOS 14 Sonoma or later. Apple Silicon and Intel supported.</p>
+      </div>
+    </section>
+
+    <!-- PERMISSIONS -->
+    <section class="wrap pt-10" id="permissions">
+      <div class="section-head">
+        <h2>Permissions</h2>
+        <p>Pinned notes work straight away. Only peek needs an Input Monitoring permission.</p>
+      </div>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800/80 text-zinc-300">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>
+          </div>
+          <h3 class="text-base font-semibold text-zinc-100">Input Monitoring - optional</h3>
+          <p class="mt-1.5 text-sm text-zinc-400">Pinned notes work without granting anything. Open, edit, and keep them beside your work from the first launch.</p>
+          <p class="mt-1.5 text-sm text-zinc-400">Input Monitoring permission needs so Napkn can tell when you hold the modifier for peek.</p>
+          <p class="mt-1.5 text-sm text-zinc-400">Grant it in System Settings &rsaquo; Privacy &amp; Security &rsaquo; Input Monitoring.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEGAL -->
+    <section class="wrap pt-10" id="legal">
+      <div class="section-head">
+        <h2>Legal</h2>
+        <p class="lede">
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener" class="underline forward">License</a>
+          &middot;
+          <a href="/apps/napkn/privacy-policy.txt" target="_blank" rel="noopener" class="underline forward">Privacy Policy</a>
+          &middot;
+          <a href="/apps/napkn/support/" class="underline forward">Support</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-auto border-t border-zinc-900 px-6 md:px-12 py-8">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+      <span>Copyright &copy; 2007-2026 Sergii Tatarenkov</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/Anze" class="hover:text-zinc-300 transition">GitHub</a>
+      </div>
+    </div>
+    <p class="max-w-5xl mx-auto pt-6 text-xs text-zinc-600">Apple, the Apple logo, and Mac are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

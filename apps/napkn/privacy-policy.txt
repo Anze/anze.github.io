@@ -1,0 +1,30 @@
+Privacy Policy for Napkn
+
+Effective Date: September 21, 2026
+
+Application
+Napkn (the Application) is an application for productivity purposes. All rights to the Application belong to its developer, Sergii Tatarenkov (the Developer).
+
+License Terms
+You may use the Application for any private or business purpose, according to the license agreement provided by the application store where the Application was purchased.
+
+User Data
+The Application stores the notes you write locally on your Mac. The Application does not require an account, does not use cloud sync, and does not send your notes or any other user data to the Developer or to anyone else.
+
+Permissions
+The Application may ask for the Input Monitoring permission. This permission is optional. It is used only to detect when you hold the modifier key that shows a note, and it is never used to record, store, or transmit what you type. If you do not grant it, pinned notes continue to work and only the peek behaviour is unavailable. You may revoke the permission at any time in System Settings, Privacy & Security, Input Monitoring.
+
+Network
+The Application sends nothing about you anywhere. No analytics, no crash reports, no diagnostics, no user data - not to the Developer, and not to anyone else.
+
+Privacy
+The Application does not collect any personal information and does not transfer any personal information to any third party. There is no analytics, no crash reporting, no usage tracking, and no advertising. Nothing about you is collected, and nothing about you is sent anywhere.
+
+Changes to This Policy
+This file may be updated from time to time. Any changes will be reflected in the updated Effective Date at the top of the file.
+
+Warranty
+The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.
+
+Contact Us
+If you have any questions or suggestions, please contact the Developer: sms@tatarenkov.name
