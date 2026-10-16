@@ -1,0 +1,28 @@
+Privacy Policy for Pocket Mouse
+
+Effective Date: October 16, 2026
+
+Application
+PocketMouse, comprising Pocket Mouse - Home for macOS and Pocket Mouse - Companion for iOS (together, the Application), is an application that allows an iPhone or iPad to control a Mac's pointer. All rights to the Application belong to its developer, Sergii Tatarenkov (the Developer).
+
+License Terms
+You may use the Application for any private or business purpose, according to the license agreement provided by the application store where the Application was obtained.
+
+User Data
+The Application does not store or process user data. The Application does not send user data to anyone else. Pairing information and settings are stored only on the devices on which the Application is installed.
+
+Permissions
+On macOS and on iOS, the Application requests Bluetooth access. This permission is required, because Bluetooth is how your iPhone or iPad and your Mac communicate. It is used only to discover and connect to your own paired devices.
+On macOS, the Application may also request Accessibility access, in order to perform taps, scrolling, dragging, and gestures on your behalf. This permission is optional: plain pointer movement works without it, and only those additional actions become unavailable if you decline. Accessibility access is used solely to send input events to the system. It is never used to read the contents of your screen, to observe what you type, or to inspect other applications, and nothing obtained through it is stored or transmitted. You may revoke the permission at any time in System Settings, Privacy & Security, Accessibility.
+
+Privacy
+The Application does not collect any personal information and does not transfer any personal information to any third party. The Application communicates only between your own devices, over Bluetooth, and makes no network connections.
+
+Changes to This Policy
+This file may be updated from time to time. Any changes will be committed directly to this repository and reflected in the updated Effective Date at the top of the file.
+
+Warranty
+The Developer provides no warranty and is not responsible for any losses or damages related to the Application's use. You use the Application at your own risk.
+
+Contact Us
+If you have any questions or suggestions, please contact the Developer: sms@tatarenkov.name
